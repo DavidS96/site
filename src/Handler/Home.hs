@@ -29,4 +29,4 @@ getHomeR = do
             
        <BUTTON ONCLICK="OLA()">
             OLA
-        }]
+        }|]
