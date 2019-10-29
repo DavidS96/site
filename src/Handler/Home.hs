@@ -17,11 +17,11 @@ getHomeR = do
             alert("ola");
         }
     |]
-    toWidgetHead [lucios|
+    toWidgetHead [lucius|
        h1{
            color : red;
            }
-       }]
+       }|]
        
        [whamlet|
        <h1>
