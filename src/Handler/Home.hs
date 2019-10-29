@@ -1,8 +1,8 @@
 {-# LANGUAGE NoImplicitPrelude #-}
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE TemplateHaskell #-}
 {-# LANGUAGE MultiParamTypeClasses #-}
+{-# LANGUAGE QuasiQuotes #-}
 {-# LANGUAGE TypeFamilies #-}
 module Handler.Home where
 
@@ -11,22 +11,21 @@ import Import
 import Database.Persist.Postgresql
 
 getHomeR :: Handler Html
-getHomeR = do
-    toWidgetHead [julius|
-        function ola(){
-            alert("ola");
-        }
-    |]
-    toWidgetHead [lucius|
-       h1{
-           color : red;
-           }
-       }|]
-       
-       [whamlet|
-       <h1>
-            OLA MUNDO!
+getHomeR = do 
+    defaultLayout $ do 
+        toWidgetHead [julius|
+            function ola() {
+                alert("OI");
+            }
+        |]
+        toWidgetHead [cassius|
+            h1 
+                color : blue;
+        |] 
+        [whamlet|
+            <h1>
+                OI MUNDO!
             
-       <BUTTON ONCLICK="OLA()">
-            OLA
-        }|]
+            <button onclick="ola()">
+                OK!
+        |]
