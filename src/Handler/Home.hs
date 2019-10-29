@@ -15,21 +15,21 @@ getHomeR = do
     defaultLayout $ do 
         addStylesheet (StaticR css_bootstrap_css)
         toWidgetHead [julius|
-            function ola() {
-                alert("OI");
+            function ola(){
+                alert("ola");
             }
         |]
-        toWidgetHead [cassius|
-            h1 
-                color : blue;
-        |] 
+        toWidgetHead [lucius|
+            h1 {
+                color : red;
+            }
+        |]
         [whamlet|
             <h1>
-                OI MUNDO!
-                
-            <img src=@{StaticR pikschu_jpg}>
+                OLA MUNDO!
             
-        
-            <button onclick="ola()">
-                OK!
+            <img src=@{StaticR pikachu_jpg}>
+            
+            <button class="btn btn-danger" onclick="ola()">
+                OLA
         |]
