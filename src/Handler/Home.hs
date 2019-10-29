@@ -30,6 +30,6 @@ getHomeR = do
             
             <img src=@{StaticR pikachu_jpg}>
             
-            <button class="btn btn-danger" onclick="ola MUNDO()">
+            <button class="btn btn-danger" onclick="ola">
                 OLA
         |]
