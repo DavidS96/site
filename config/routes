@@ -8,3 +8,5 @@
 /p2 Page2R GET
 
 /produto ProdutoR GET POST
+/listar  ListProdR GET
+/produto/#ProdutoId/apagar ApagarProdR POST
