@@ -6,6 +6,7 @@
 {-# LANGUAGE TypeFamilies #-}
 module Handler.Produto where
 
+
 import Import
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
