@@ -7,4 +7,4 @@
 /p1 Page1R GET
 /p2 Page2R GET
 
-/produto Produto GET POST
+/produto ProdutoR GET POST
