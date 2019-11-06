@@ -12,35 +12,40 @@ import Database.Persist.Postgresql
 import Text.Lucius
 import Text.Julius
 
-formProduto :: Form Produto
-formProduto = renderBootstrap $ Produto
-    <$> areq textField "Nome: " Nothing 
-    <*> areq doubleField "Preco: " Nothing 
+-- renderDivs
+formProduto :: Form Produto 
+formProduto = renderBootstrap $ Produto 
+    <$> areq textField "Nome: " Nothing
+    <*> areq doubleField "Preco: " Nothing
+
 
 getProdutoR :: Handler Html
-getProdutoR = do
-(widget,enctype) <- generateFormProduto
-    defaultLayout $ do
+getProdutoR = do 
+    (widget,enctype) <- generateFormPost formProduto 
+    defaultLayout $ do 
         msg <- getMessage
         [whamlet|
-           $maybe mensa <- msg
-              <div>
-                 ^{mensa}
+            $maybe mensa <- msg
+                <div>
+                    ^{mensa}
+            
             <h1>
-                CADASTRO DE PRODUTO
+                CADASTRO DE PRODUTOS
+                
             <form method=post action=@{ProdutoR}>
                 ^{widget}
+                <input type="submit" value="Cadastrar">
         |]
 
-postProdutoR :: Handler html
-postProdutoR = do
+postProdutoR :: Handler Html
+postProdutoR = do 
     ((result,_),_) <- runFormPost formProduto
-    case result of
-      FormSucccess produto -> do
-         runDB $ insert produto
-         steMessage [shamlet|
-            <h2>
-                 PRODUTO INSERIDO COM SUCESSO
-         |]
-         redirect ProdutoR
-      _ -> redirect HomeR
+    case result of 
+        FormSuccess produto -> do 
+            runDB $ insert produto
+            setMessage [shamlet|
+                <h2>
+                    PRODUTO INSERIDO COM SUCESSO
+            |]
+            redirect ProdutoR
+        _ -> redirect HomeR
