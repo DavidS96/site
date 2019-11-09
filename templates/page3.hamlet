@@ -2,7 +2,6 @@
 
 <head>
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
     <title>PokeSquad | Home
 
 <body>
@@ -14,7 +13,7 @@
             <nav>
                 <ul>
                     <li class="current">
-                        <a href=@{HomeR}>Homer
+                        <a href=@{HomeR}>Home
                     <li>
                         <a href="events.html">Events
                     <li>
@@ -67,3 +66,5 @@
                 <input type="password" name="" placeholder="Senha">
                 <input type="submit" name="" value="Login">
                 <div id="signup"><a href="signup.html">cadastre-se
+                
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
