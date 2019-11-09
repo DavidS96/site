@@ -32,21 +32,21 @@
         <div class="container">
             <div class="box">
                 <a href="https://discord.gg/bHEkvUM" target="_blank">
-                    <img src="./static/discord_png">
+                    <img src="./static/discord.png">
 
                 <h3>Servidor do Discord
                 <p>Conecte-se em nosso servidor para bater um papo enquanto batalha
 
             <div class="box">
                 <a href="https://chat.whatsapp.com/FBx7SodScQH2KhQt39D4sv" target="_blank">
-                    <img src="./static/whatsapp_png">
+                    <img src="./static/whatsapp.png">
 
                 <h3>Grupo do Whatsapp
                 <p>Entre em nosso grupo e participe de todos os eventos e encontrar batalhas
 
             <div class="box">
                 <a href="https://www.facebook.com/PokeSquadLeague/" target="_blank">
-                    <img src="./static/facebook_png">
+                    <img src="./static/facebook.png">
 
                 <h3>Página no Facebook
                 <p>Curta nossa página para sempre ficar ligado no que está por vir
