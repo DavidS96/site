@@ -1,69 +1,62 @@
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <title>PokeSquad | Home
-
-<body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    <header>
-        <div class="container">
-            <a href=@{HomeR}>
-                <div id="logo">
-
-            <nav>
-                <ul>
-                    <li class="current">
-                        <a href=@{HomeR}>Home
-                    <li>
-                        <a href="events.html">Events
-                    <li>
-                        <a href="rules.html">Rules
-                    <li>
-                        <a class="login" href="#" id="button">Sign in
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+<header>
     <div class="container">
-        <h1>
-            <span class="highlight">Eventos</span> Recentes
-        <section id="slider">
-            <div class="banner1">
-            <div class="banner2">
+        <a href=@{HomeR}>
+            <div id="logo">
 
-    <section id="boxes">
-        <div class="container">
-            <div class="box">
-                <a href="https://discord.gg/bHEkvUM" target="_blank">
-                    <img src=@{StaticR discord_png}>
+        <nav>
+            <ul>
+                <li class="current">
+                    <a href=@{HomeR}>Home
+                <li>
+                    <a href="events.html">Events
+                <li>
+                    <a href="rules.html">Rules
+                <li>
+                    <a class="login" href="#" id="button">Sign in
 
-                <h3>Servidor do Discord
-                <p>Conecte-se em nosso servidor para bater um papo enquanto batalha
+<div class="container">
+    <h1>
+        <span class="highlight">Eventos</span> Recentes
+    <section id="slider">
+        <div class="banner1">
+        <div class="banner2">
 
-            <div class="box">
-                <a href="https://chat.whatsapp.com/FBx7SodScQH2KhQt39D4sv" target="_blank">
-                    <img src=@{StaticR whatsapp_png}>
+<section id="boxes">
+    <div class="container">
+        <div class="box">
+            <a href="https://discord.gg/bHEkvUM" target="_blank">
+                <img src=@{StaticR discord_png}>
 
-                <h3>Grupo do Whatsapp
-                <p>Entre em nosso grupo e participe de todos os eventos e encontrar batalhas
+            <h3>Servidor do Discord
+            <p>Conecte-se em nosso servidor para bater um papo enquanto batalha
 
-            <div class="box">
-                <a href="https://www.facebook.com/PokeSquadLeague/" target="_blank">
-                    <img src=@{StaticR facebook_png}>
+        <div class="box">
+            <a href="https://chat.whatsapp.com/FBx7SodScQH2KhQt39D4sv" target="_blank">
+                <img src=@{StaticR whatsapp_png}>
 
-                <h3>Página no Facebook
-                <p>Curta nossa página para sempre ficar ligado no que está por vir
+            <h3>Grupo do Whatsapp
+            <p>Entre em nosso grupo e participe de todos os eventos e encontrar batalhas
 
-    <footer>
-        <div class="container">
-            <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um
-                modo novo de se jogar fora das convenções já estabelecidas por formatos como Smogon e VGC, oferecendo um
-                formato
-                menos competitivo e mais <i>for fun.
+        <div class="box">
+            <a href="https://www.facebook.com/PokeSquadLeague/" target="_blank">
+                <img src=@{StaticR facebook_png}>
 
-    <div class="modal-holder">
-        <div class="modal-content">
-            <div class="close">+
-            <form class="txtbox login" action="index.html" method="post">
-                <input type="text" name="" placeholder="Email">
-                <input type="password" name="" placeholder="Senha">
-                <input type="submit" name="" value="Login">
-                <div id="signup"><a href="signup.html">cadastre-se
+            <h3>Página no Facebook
+            <p>Curta nossa página para sempre ficar ligado no que está por vir
+
+<footer>
+    <div class="container">
+        <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um
+            modo novo de se jogar fora das convenções já estabelecidas por formatos como Smogon e VGC, oferecendo um
+            formato
+            menos competitivo e mais <i>for fun.
+
+<div class="modal-holder">
+    <div class="modal-content">
+        <div class="close">+
+        <form class="txtbox login" action="index.html" method="post">
+            <input type="text" name="" placeholder="Email">
+            <input type="password" name="" placeholder="Senha">
+            <input type="submit" name="" value="Login">
+            <div id="signup"><a href="signup.html">cadastre-se
