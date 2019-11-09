@@ -29,7 +29,7 @@ getPage3R = do
     defaultLayout $ do
         $(whamletFile "templates/page3.hamlet")
         toWidgetHead $(luciusFile "templates/page3.lucius")
-        toWidgetHead $(juliusFile "templates/page3.julius")
+
 
 getHomeR :: Handler Html
 getHomeR = do 
