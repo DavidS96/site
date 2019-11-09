@@ -24,8 +24,8 @@ getPage2R = do
     defaultLayout $ do
         $(whamletFile "templates/page2.hamlet")
 
-getPage3R ::Handler Html
-getPage3R = do
+getHomeR ::Handler Html
+getHomeR = do
     defaultLayout $ do
         $(whamletFile "templates/page3.hamlet")
         toWidgetHead $(luciusFile "templates/page3.lucius")
@@ -35,26 +35,26 @@ getPage3R = do
         toWidgetHead $(juliusFile "templates/slick.min.julius")
 
 
-getHomeR :: Handler Html
-getHomeR = do 
-    defaultLayout $ do 
-        addStylesheet (StaticR css_bootstrap_css)
-        toWidgetHead [julius|
-            function ola(){
-                alert("ola");
-            }
-        |]
-        toWidgetHead [lucius|
-            h1 {
-                color : red;
-            }
-        |]
-        [whamlet|
-            <h1>
-                OLA MUNDO!
+-- getHomeR :: Handler Html
+-- getHomeR = do 
+--     defaultLayout $ do 
+--         addStylesheet (StaticR css_bootstrap_css)
+--         toWidgetHead [julius|
+--             function ola(){
+--                 alert("ola");
+--             }
+--         |]
+--         toWidgetHead [lucius|
+--             h1 {
+--                 color : red;
+--             }
+--         |]
+--         [whamlet|
+--             <h1>
+--                 OLA MUNDO!
             
-            <img src=@{StaticR sample_png}>
+--             <img src=@{StaticR sample_png}>
             
-            <button class="btn btn-danger" onclick="olaa">
-                OLA
-        |]
+--             <button class="btn btn-danger" onclick="olaa">
+--                 OLA
+--         |]
