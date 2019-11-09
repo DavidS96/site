@@ -24,6 +24,10 @@ getPage2R = do
     defaultLayout $ do
         $(whamletFile "templates/page2.hamlet")
 
+getPage3R ::Handler Html
+getPage3R = do
+    defaultLayout $ do
+        $(whamletFile "templates/page3.hamlet")
 
 getHomeR :: Handler Html
 getHomeR = do 
