@@ -43,7 +43,7 @@ getHomeR = do
             <h1>
                 OLA MUNDO!
             
-            <img src=@{StaticR pikachu_jpg}>
+            <img src=@{StaticR sample.png}>
             
             <button class="btn btn-danger" onclick="olaa">
                 OLA
