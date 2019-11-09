@@ -67,7 +67,3 @@
                 <input type="submit" name="" value="Login">
                 <div id="signup"><a href="signup.html">cadastre-se
 
-    <script type="text/javascript" src="../js/jquery.js">
-    <script type="text/javascript" src="../js/jquery-migrate.js">
-    <script type="text/javascript" src="../js/slick.min.js">
-    <script type="text/javascript" src="../js/main.js">
