@@ -13,7 +13,7 @@ body {
 /* Global */
 .container {
     width: 60%;
-    margin: 0 auto;
+    margin: auto;
     /*overflow: hidden;*/
 }
 
@@ -29,8 +29,8 @@ a {
 }
 
 ul {
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
 }
 
 ::-webkit-scrollbar {
