@@ -54,7 +54,7 @@ header {
 }
 
 header #logo {
-    background-image: url('./static/sample.png');
+    background-image: url(@{StaticR sample_png});
     background-repeat: no-repeat;
     background-size: 80px;
     height: 80px;
