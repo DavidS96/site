@@ -81,7 +81,7 @@ header li {
 }
 
 header .current a {
-    color: #ff0039;
+    color:#ff0039;
     border-bottom:#ff0039 2px solid;
     padding-bottom: 1px;
 }
