@@ -28,11 +28,11 @@ getHomeR ::Handler Html
 getHomeR = do
     defaultLayout $ do
         $(whamletFile "templates/page3.hamlet")
-        toWidgetHead $(luciusFile "templates/page3.lucius")
-        toWidgetHead $(jsFile "templates/jquery.js")
-        toWidgetHead $(jsFile "templates/jquery-migrate.js")
         toWidgetHead $(jsFile "templates/slick.min.js")
         toWidgetHead $(jsFile "templates/main.js")
+        toWidgetHead $(luciusFile "templates/page3.lucius")
+        -- toWidgetHead $(jsFile "templates/jquery.js")
+        -- toWidgetHead $(jsFile "templates/jquery-migrate.js")
 
 
 -- getHomeR :: Handler Html
