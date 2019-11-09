@@ -32,7 +32,7 @@ getPage3R = do
         toWidgetHead $(juliusFile "templates/main.julius")
         toWidgetHead $(juliusFile "templates/jquery.julius")
         toWidgetHead $(juliusFile "templates/jquery-migrate.julius")
-        toWidgetHead $(juliusFile "templates/slick.julius")
+        toWidgetHead $(juliusFile "templates/slick.min.julius")
 
 
 getHomeR :: Handler Html
