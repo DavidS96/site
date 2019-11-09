@@ -29,8 +29,8 @@ getHomeR = do
     defaultLayout $ do
         $(whamletFile "templates/page3.hamlet")
         toWidgetHead $(luciusFile "templates/page3.lucius")
-        toWidget $(juliusFile "templates/jquery.julius")
-        toWidget $(juliusFile "templates/jquery-migrate.julius")
+        -- toWidget $(juliusFile "templates/jquery.julius")
+        -- toWidget $(juliusFile "templates/jquery-migrate.julius")
         toWidget $(juliusFile "templates/main.julius")
         toWidget $(juliusFile "templates/slick.min.julius")
 
