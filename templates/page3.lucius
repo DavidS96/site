@@ -87,7 +87,7 @@ header .current a {
 }
 
 header li a:hover {
-    color: ff0039!important;
+    color: #ff0039;
     border-bottom:#ff0039 2px solid;
     padding-bottom: 1px;
 }
