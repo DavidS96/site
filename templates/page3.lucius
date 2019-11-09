@@ -15,7 +15,6 @@ body {
     width: 60%;
     margin: auto;
     /*overflow: hidden;*/
-    /*oi :3*/
 }
 
 .container h1 {text-transform: uppercase;}
