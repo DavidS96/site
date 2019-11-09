@@ -29,8 +29,8 @@ getHomeR = do
     defaultLayout $ do
         toWidget $(jsFile "templates/slick.min.js")
         toWidget $(jsFile "templates/main.js")
+        toWidget $(luciusFile "templates/page3.lucius")
         $(whamletFile "templates/page3.hamlet")
-        toWidgetHead $(luciusFile "templates/page3.lucius")
         -- toWidgetHead $(jsFile "templates/jquery.js")
         -- toWidgetHead $(jsFile "templates/jquery-migrate.js")
 
