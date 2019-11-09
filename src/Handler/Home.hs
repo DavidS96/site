@@ -31,8 +31,8 @@ getHomeR = do
         toWidgetHead $(luciusFile "templates/page3.lucius")
         -- toWidget $(juliusFile "templates/jquery.julius")
         -- toWidget $(juliusFile "templates/jquery-migrate.julius")
-        toWidget $(juliusFile "templates/main.julius")
-        toWidget $(juliusFile "templates/slick.min.julius")
+        -- toWidget $(juliusFile "templates/main.julius")
+        -- toWidget $(juliusFile "templates/slick.min.julius")
 
 
 -- getHomeR :: Handler Html
