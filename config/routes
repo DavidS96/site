@@ -13,4 +13,4 @@
 
 /cadastro UsuarioR GET POST
 /login LoginR GET POST
-/logout
+/logout LogoutR GET 
