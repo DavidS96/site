@@ -1,4 +1,14 @@
+Usuario
+    nome  Text
+    email Text
+    senha Text
+    UniqueEmail email
+    deriving show
+
 Produto
     nome Text
     valor Double
     deriving Show
+    
+    
+    
