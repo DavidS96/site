@@ -12,12 +12,12 @@ import Database.Persist.Postgresql
 import Text.Lucius
 import Text.Julius
 
-formUsuarioR :: Form Usuario 
-formUsuarioR = renderBootstrap $ Usuario
+formUsu :: Form Usuario 
+formUsu = renderBootstrap $ Usuario 
     <$> areq textField "Nome: " Nothing
     <*> areq emailField "E-mail: " Nothing
     <*> areq passwordField "Senha: " Nothing
-
+    
 getUsuarioR :: Handler Html
 getUsuarioR = do 
     (widget,enctype) <- generateFormPost formUsu
@@ -47,5 +47,4 @@ postUsuarioR = do
                     USUARIO INSERIDO COM SUCESSO
             |]
             redirect UsuarioR
-        _ -> redirect HomeR        
-        
+        _ -> redirect HomeR

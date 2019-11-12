@@ -12,11 +12,11 @@ import Database.Persist.Postgresql
 import Text.Lucius
 import Text.Julius
 
-formLogin :: Form (Text,Text)
-formLogin= renderBootstrap $ (,)
+formLogin :: Form (Text, Text) 
+formLogin = renderBootstrap $ (,) 
     <$> areq emailField "E-mail: " Nothing
     <*> areq passwordField "Senha: " Nothing
-
+    
 getLoginR :: Handler Html
 getLoginR = do 
     (widget,enctype) <- generateFormPost formLogin
@@ -28,10 +28,39 @@ getLoginR = do
                     ^{mensa}
             
             <h1>
-                Login
+                LOGIN
                 
             <form method=post action=@{LoginR}>
                 ^{widget}
-                <input type="submit" value="Cadastrar">
+                <input type="submit" value="Entrar">
         |]
 
+postLoginR :: Handler Html
+postLoginR = do 
+    ((result,_),_) <- runFormPost formLogin
+    case result of 
+        FormSuccess (email,senha) -> do 
+            usuario <- runDB $ getBy (UniqueEmailAdm email)
+            case usuario of 
+                Nothing -> do 
+                    setMessage [shamlet| 
+                        <div>
+                            E-mail nao encontrado!
+                    |]
+                    redirect LoginR
+                Just (Entity _ usr) -> do
+                    if (usuarioSenha usr == senha) then do 
+                        setSession "_NOME" (usuarioNome usr)
+                        redirect HomeR
+                    else do 
+                        setMessage [shamlet| 
+                        <div>
+                            Senha INVALIDA!
+                    |]
+                    redirect LoginR
+        _ -> redirect HomeR
+
+postLogoutR :: Handler Html
+postLogoutR = do 
+    deleteSession "_NOME"
+    redirect HomeR
