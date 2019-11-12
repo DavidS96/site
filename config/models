@@ -3,7 +3,7 @@ Usuario
     email Text
     senha Text
     UniqueEmail email
-    deriving show
+    deriving Show
 
 Produto
     nome Text
