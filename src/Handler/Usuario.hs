@@ -12,8 +12,8 @@ import Database.Persist.Postgresql
 import Text.Lucius
 import Text.Julius
 
-formUsuario :: Form Usuario 
-formUsuario = renderBootstrap $ Usuario
+formUsuarioR :: Form Usuario 
+formUsuarioR = renderBootstrap $ Usuario
     <$> areq textField "Nome: " Nothing
     <*> areq emailField "E-mail: " Nothing
     <*> areq passwordField "Senha: " Nothing
