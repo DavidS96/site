@@ -23,9 +23,9 @@ mkYesodData "App" $(parseRoutesFile "config/routes")
 
 instance Yesod App where
     makeLogger = return . appLogger
-    authRoute_ = (Just LoginR)
+    authRoute _ = (Just LoginR)
     
-   isAuthorized HomeR _ = return Authorized
+    isAuthorized HomeR _ = return Authorized
     isAuthorized UsuarioR _ = return Authorized
     isAuthorized LoginR _ = return Authorized
     isAuthorized (StaticR _) _ = return Authorized
@@ -37,6 +37,7 @@ isUsuario = do
     case sess of 
         Nothing -> return AuthenticationRequired
         (Just _) -> return Authorized
+
             
 type Form a = Html -> MForm Handler (FormResult a, Widget)
 
