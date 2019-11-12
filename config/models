@@ -2,13 +2,10 @@ Usuario
     nome  Text
     email Text
     senha Text
-    UniqueEmail email
+    UniqueEmailAdm email
     deriving Show
 
-Produto
-    nome Text
+Produto 
+    nome  Text 
     valor Double
     deriving Show
-    
-    
-    
