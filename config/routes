@@ -15,4 +15,4 @@
 /login    LoginR   GET POST
 /logout   LogoutR  POST
 
-/admin Admin GET
+/admin    AdminR   GET
