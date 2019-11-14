@@ -15,17 +15,18 @@ import Text.Julius
 getHomeR ::Handler Html
 getHomeR = do
     defaultLayout $ do
+        $(whamletFile "templates/index.hamlet")
         --toWidget $(jsFile "templates/slick.min.js")
         --toWidget $(jsFile "templates/main.js")
         --addScript (StaticR slick_js)
         --addScript (StaticR main_js)
         toWidget $(luciusFile "templates/style.lucius")
-        $(whamletFile "templates/index.hamlet")
+        
 
--- getPage1R ::Handler Html
--- getPage1R = do
---     defaultLayout $ do
---         $(whamletFile "templates/page1.hamlet")
+getRulesR ::Handler Html
+getRulesR = do
+    defaultLayout $ do
+         $(whamletFile "templates/rules.hamlet")
 --         toWidgetHead $(luciusFile "templates/page1.lucius")
 --         toWidgetHead $(juliusFile "templates/page1.julius")
 
