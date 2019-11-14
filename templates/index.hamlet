@@ -12,7 +12,8 @@
                     <a href="events.html">Events
                 <li>
                     <a href=@{RulesR}>Rules
-               
+                <li>
+                    <a class="login" href="#" id="button">Sign in
 
 <div class="container">
     <h1>

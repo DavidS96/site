@@ -30,6 +30,11 @@ getRulesR = do
 --         toWidgetHead $(luciusFile "templates/page1.lucius")
 --         toWidgetHead $(juliusFile "templates/page1.julius")
 
+getRulessR ::Handler Html
+getRulessR = do
+    defaultLayout $ do
+         $(whamletFile "templates/ruless.hamlet")
+
 -- getPage2R ::Handler Html
 -- getPage2R = do
 --     defaultLayout $ do
