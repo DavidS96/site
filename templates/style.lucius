@@ -100,7 +100,7 @@ header li a:hover {
 }
 
 .slick-prev {
-    z-index: 8;
+    z-index: 7;
     top: 150px;
     position: absolute;
     background-color: transparent;
