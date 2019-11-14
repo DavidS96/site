@@ -3,7 +3,8 @@
 /favicon.ico FaviconR GET
 /robots.txt RobotsR GET
 
-/ HomeR GET 
+/ HomeR GET
+/rules rulesR GET
 /p1 Page1R GET
 /p2 Page2R GET
 
