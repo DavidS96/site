@@ -16,7 +16,7 @@ module Application
     , shutdownApp
     -- * for GHCI
     ) where
-
+import Network.Wai.Handler.WarpTLS
 import Control.Monad.Logger                 (liftLoc, runLoggingT)
 import Database.Persist.Postgresql          (createPostgresqlPool, pgConnStr,
                                              pgPoolSize, runSqlPool)
@@ -138,27 +138,19 @@ develMain :: IO ()
 develMain = develMainHelper getApplicationDev
 
 -- | The @main@ function for an executable running this site.
+
 appMain :: IO ()
 appMain = do
-    putStrLn "começo a rodar agora"
-    -- Get the settings from all relevant sources
+    let cp s = "/etc/letsencrypt/live/pokesquadtab.ml/" ++ s
     settings <- loadYamlSettingsArgs
-        -- fall back to compile-time values, set to [] to require values at runtime
         [configSettingsYmlValue]
-
-        -- allow environment variables to override
         useEnv
-
-    -- Generate the foundation from the settings
     foundation <- makeFoundation settings
-
-    -- Generate a WAI Application from the foundation
     app <- makeApplication foundation
-
-    -- Run the application with Warp
-    runSettings (warpSettings foundation) app
-
-
+    runTLS
+        (tlsSettingsChain (cp "cert.pem") [cp "chain.pem"] (cp "privkey.pem"))
+        (warpSettings foundation)
+        app
 --------------------------------------------------------------
 -- Functions for DevelMain.hs (a way to run the app from GHCi)
 --------------------------------------------------------------
