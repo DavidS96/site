@@ -15,8 +15,8 @@ import Text.Julius
 getHomeR ::Handler Html
 getHomeR = do
     defaultLayout $ do
-        toWidget $(jsFile "templates/slick.min.js")
-        toWidget $(jsFile "templates/main.js")
+        --toWidget $(jsFile "templates/slick.min.js")
+        --toWidget $(jsFile "templates/main.js")
         --addScript (StaticR slick_js)
         --addScript (StaticR main_js)
         toWidget $(luciusFile "templates/style.lucius")
