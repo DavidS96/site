@@ -27,12 +27,10 @@ getPage2R = do
 getHomeR ::Handler Html
 getHomeR = do
     defaultLayout $ do
-        --toWidget $(jsFile "templates/slick.min.js")
-        --toWidget $(jsFile "templates/main.js")
-        addScript (StaticR jquery_js)
-        addScript (StaticR jquerymigrate_js)
-        addScript (StaticR slick_js)
-        addScript (StaticR main_js)
+        toWidget $(jsFile "templates/slick.min.js")
+        toWidget $(jsFile "templates/main.js")
+        --addScript (StaticR slick_js)
+        --addScript (StaticR main_js)
         toWidget $(luciusFile "templates/page3.lucius")
         $(whamletFile "templates/page3.hamlet")
 
