@@ -27,6 +27,7 @@ getPage2R = do
 getHomeR ::Handler Html
 getHomeR = do
     defaultLayout $ do
+    <meta name="viewport" content="width=device-width">
         --toWidget $(jsFile "templates/slick.min.js")
         --toWidget $(jsFile "templates/main.js")
         --addScript (StaticR slick_js)
