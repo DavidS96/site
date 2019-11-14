@@ -5,7 +5,7 @@
 
 / HomeR GET
 /rules RulesR GET
-/ruless RulessR GET
+
 
 /produto ProdutoR GET POST
 /listar  ListProdR GET
