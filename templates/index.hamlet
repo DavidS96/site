@@ -11,7 +11,7 @@
                 <li>
                     <a href="events.html">Events
                 <li>
-                    <a href=@{RulesR}>Rules
+                    <a href=@{RulesR}>Rulesr
                 <li>
                     <a class="login" href="#" id="button">Sign in
 
