@@ -27,8 +27,13 @@ getRulesR ::Handler Html
 getRulesR = do
     defaultLayout $ do
          $(whamletFile "templates/rules.hamlet")
---         toWidgetHead $(luciusFile "templates/page1.lucius")
---         toWidgetHead $(juliusFile "templates/page1.julius")
+         
+getTesteR ::Handler Html
+getTesteR = do
+    defaultLayout $ do
+         $(whamletFile "templates/teste.hamlet")
+
+
 
 
 

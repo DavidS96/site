@@ -16,3 +16,5 @@
 /logout   LogoutR  POST
 
 /admin    AdminR   GET
+
+/teste TesteR GET
