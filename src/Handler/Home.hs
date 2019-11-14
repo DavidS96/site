@@ -29,8 +29,8 @@ getHomeR = do
     defaultLayout $ do
         --toWidget $(jsFile "templates/slick.min.js")
         --toWidget $(jsFile "templates/main.js")
-        addScript (StaticR slick_js)
-        addScript (StaticR main_js)
+        addScript (StaticR "slick.js")
+        addScript (StaticR "main.js")
         toWidget $(luciusFile "templates/page3.lucius")
         $(whamletFile "templates/page3.hamlet")
 
