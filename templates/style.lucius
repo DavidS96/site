@@ -109,7 +109,7 @@ header li a:hover {
     width: 100px;
     height: 100px;
     background-size: 100px;
-    background-image: url('../img/arrowLeft.png');
+    background-image: url('./static/arrowLeft.png');
     background-repeat: no-repeat;
     outline: none;
     cursor: pointer;
@@ -126,7 +126,7 @@ header li a:hover {
     width: 100px;
     height: 100px;
     background-size: 100px;
-    background-image: url('../img/arrowRight.png');
+    background-image: url('./static/arrowRight.png');
     background-repeat: no-repeat;
     outline: none;
     cursor: pointer;
@@ -187,13 +187,13 @@ li.slick-active button {background-color: #ff0039;}
 }
 
 .banner1 {
-    background-image: url('../img/Pokemon.png');
+    background-image: url('./static/Pokemon.png');
     background-size: cover;
     outline: none;
 }
 
 .banner2 {
-    background-image: url('../img/Pokemon2.png');
+    background-image: url('./static/Pokemon2.png');
     background-size: cover;
     outline: none;
 }
@@ -256,7 +256,7 @@ footer {
 
 .modal-content {
     min-width: 500px;
-    background-image: url('../img/mountain-black.png');
+    background-image: url('./static/mountain-black.png');
     background-size: cover;
     background-position: center;
     border-radius: 20px;
