@@ -19,7 +19,7 @@
 <div class="container">
     <article>
         <h2 class="highlight">Item Clause:</h2>
-        <li>Só será permitido a repetição de um item, uma vez.</li>
+        <li>Só será permitido a repetição de um item uma vez.</li>
         <li>O jogador pode repetir item contanto que só repita o mesmo item uma vez e não haja outros itens
             repetidos
             em
