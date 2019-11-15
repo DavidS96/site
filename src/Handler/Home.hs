@@ -21,7 +21,7 @@ instance Yesod App where
 
             <html>
                 <head>
-                    <title>#{Home}
+                    <title>home{title}
                     ^{headTags}
                 <body>
                     $maybe msg <- mmsg
