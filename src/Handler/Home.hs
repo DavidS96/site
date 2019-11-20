@@ -27,6 +27,7 @@ getRulesR ::Handler Html
 getRulesR = do
     defaultLayout $ do
          $(whamletFile "templates/rules.hamlet")
+         toWidget $(luciusFile "templates/style.lucius")
          
 getTesteR ::Handler Html
 getTesteR = do
