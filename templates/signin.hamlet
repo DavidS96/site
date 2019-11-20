@@ -24,9 +24,9 @@
                 <input type="password" name="" placeholder="Confirmar Senha">
                 <input type="submit" name="" value="Login">
 
-    <footer>
-        <div class="container">
-            <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um
-                modo novo de se jogar fora das convenções já estabelecidas por formatos como Smogon e VGC, oferecendo um
-                formato
-                menos competitivo e mais <i>for fun</i>.</p>
+<footer>
+    <div class="container">
+        <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um 
+            modo novo de se jogar fora das convenções já estabelecidas por formatos como Smogon e VGC, oferecendo um
+            formato
+            menos competitivo e mais <i>for fun.
