@@ -23,32 +23,34 @@ mkYesodData "App" $(parseRoutesFile "config/routes")
 
 instance Yesod App where
     makeLogger = return . appLogger
-    authRoute _ = (Just LoginR)
+    
+    authRoute _ = Just EntrarR
     
     isAuthorized HomeR _ = return Authorized
-    isAuthorized UsuarioR _ = return Authorized
-    isAuthorized LoginR _ = return Authorized
+    isAuthorized EntrarR _ = return Authorized
+    isAuthorized UsuarioR _ = return Authorized 
+    isAuthorized AtorR _ = return Authorized
+    isAuthorized SerieR _ = return Authorized
+    isAuthorized AtuaR _ = return Authorized
+    isAuthorized (ElencoR _) _ = return Authorized
     isAuthorized (StaticR _) _ = return Authorized
-    isAuthorized RulesR _ = return Authorized
-    isAuthorized AdminR _ = isRoot
+    isAuthorized AdminR _ = isAdmin
     isAuthorized _ _ = isUsuario
-    
-    
 
-isRoot :: Handler AuthResult
-isRoot = do 
+isAdmin :: Handler AuthResult
+isAdmin = do 
     sess <- lookupSession "_NOME"
     case sess of 
         Nothing -> return AuthenticationRequired
-        Just "Root" -> return Authorized
-        Just _ -> return (Unauthorized "VC N EH ADMIN")
+        Just "admin" -> return Authorized
+        Just _ -> return $ Unauthorized "VC EH USUARIO COMUM"
 
 isUsuario :: Handler AuthResult
 isUsuario = do 
     sess <- lookupSession "_NOME"
     case sess of 
         Nothing -> return AuthenticationRequired
-        (Just _) -> return Authorized
+        Just _ -> return Authorized
 
 type Form a = Html -> MForm Handler (FormResult a, Widget)
 
@@ -62,4 +64,4 @@ instance RenderMessage App FormMessage where
     renderMessage _ _ = defaultFormMessage
 
 instance HasHttpManager App where
-    getHttpManager = appHttpManager
+    getHttpManager = appHttpManage
