@@ -7,7 +7,7 @@
         <nav>
             <ul>
                 <li class="current">
-                    <a href=@{HomeR}>Homer
+                    <a href=@{HomeR}>Home
                 <li>
                     <a href="events.html">Events
                 <li>
@@ -19,7 +19,7 @@
     <h1>
         <span class="highlight">Eventos</span> Recentes
     <section id="slider">
-        <div class="banner1">
+
         <div class="banner2">
 
 <section id="boxes">

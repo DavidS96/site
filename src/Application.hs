@@ -16,12 +16,13 @@ module Application
     , shutdownApp
     -- * for GHCI
     ) where
-import Network.Wai.Handler.WarpTLS
+
 import Control.Monad.Logger                 (liftLoc, runLoggingT)
 import Database.Persist.Postgresql          (createPostgresqlPool, pgConnStr,
                                              pgPoolSize, runSqlPool)
 import Import
 import Language.Haskell.TH.Syntax           (qLocation)
+import Network.Wai.Handler.WarpTLS
 import Network.Wai (Middleware)
 import Network.Wai.Handler.Warp             (Settings, defaultSettings,
                                              defaultShouldDisplayException,
@@ -38,9 +39,12 @@ import System.Log.FastLogger                (defaultBufSize, newStdoutLoggerSet,
 -- Don't forget to add new modules to your cabal file!
 import Handler.Common
 import Handler.Home
-import Handler.Produto
 import Handler.Usuario
 import Handler.Login
+import Handler.Ator
+import Handler.Serie
+import Handler.Atua
+
 -- This line actually creates our YesodDispatch instance. It is the second half
 -- of the call to mkYesodData which occurs in Foundation.hs. Please see the
 -- comments there for more details.
@@ -138,10 +142,9 @@ develMain :: IO ()
 develMain = develMainHelper getApplicationDev
 
 -- | The @main@ function for an executable running this site.
-
 appMain :: IO ()
 appMain = do
-    let cp s = "/etc/letsencrypt/live/pokesquadtab.ml/" ++ s
+    let cp s = "/etc/letsencrypt/live/aulahaskell.ml/" ++ s
     settings <- loadYamlSettingsArgs
         [configSettingsYmlValue]
         useEnv
@@ -151,6 +154,9 @@ appMain = do
         (tlsSettingsChain (cp "cert.pem") [cp "chain.pem"] (cp "privkey.pem"))
         (warpSettings foundation)
         app
+
+
+
 --------------------------------------------------------------
 -- Functions for DevelMain.hs (a way to run the app from GHCi)
 --------------------------------------------------------------

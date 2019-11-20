@@ -11,6 +11,11 @@
 /listar  ListProdR GET
 /produto/#ProdutoId/apagar ApagarProdR POST
 
+/ator     AtorR    GET POST
+/serie    SerieR   GET POST
+
+/atua     AtuaR    GET POST
+
 /cadastro UsuarioR GET POST
 /login    LoginR   GET POST
 /logout   LogoutR  POST

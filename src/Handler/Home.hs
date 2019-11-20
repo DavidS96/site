@@ -12,23 +12,6 @@ import Database.Persist.Postgresql
 import Text.Lucius
 import Text.Julius
 
-instance Yesod App where
-    defaultLayout contents = do
-        PageContent title headTags bodyTags <- widgetToPageContent contents
-        mmsg <- getMessage
-        withUrlRenderer [hamlet|
-            $doctype 5
-
-            <html>
-                <head>
-                    <title>home{title}
-                    ^{headTags}
-                <body>
-                    $maybe msg <- mmsg
-                        <div #message>#{msg}
-                    ^{bodyTags}
-        |]
-
 getHomeR ::Handler Html
 getHomeR = do
     defaultLayout $ do
