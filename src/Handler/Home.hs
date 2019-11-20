@@ -28,7 +28,20 @@ getRulesR = do
     defaultLayout $ do
          $(whamletFile "templates/rules.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
-         
+
+getSigninR ::Handler Html
+getRulesR = do
+    defaultLayout $ do
+         $(whamletFile "templates/signin.hamlet")
+         toWidget $(luciusFile "templates/style.lucius")
+         toWidget $(luciusFile "templates/signin.lucius")
+
+getEventsR ::Handler Html
+getRulesR = do
+    defaultLayout $ do
+         $(whamletFile "templates/events.hamlet")
+         toWidget $(luciusFile "templates/style.lucius")
+
 getTesteR ::Handler Html
 getTesteR = do
     defaultLayout $ do

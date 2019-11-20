@@ -9,11 +9,11 @@
                 <li>
                     <a href=@{HomeR}>Home
                 <li>
-                    <a href="events.html">Events
+                    <a href=@{EventsR}>Events
                 <li class="current">
                     <a href=@{RulesR}>Rules
                 <li>
-                    <a class="login" href="#" id="button">Sign in
+                    <a href=@{SigninR}>Sign in
 
                 
 <div class="container">
@@ -76,12 +76,3 @@
             modo novo de se jogar fora das convenções já estabelecidas por formatos como Smogon e VGC, oferecendo um
             formato
             menos competitivo e mais <i>for fun.
-
-<div class="modal-holder">
-    <div class="modal-content">
-        <div class="close">+
-        <form class="txtbox login" action="index.html" method="post">
-            <input type="text" name="" placeholder="Email">
-            <input type="password" name="" placeholder="Senha">
-            <input type="submit" name="" value="Login">
-            <div id="signup"><a href="signup.html">cadastre-se
