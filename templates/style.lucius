@@ -190,13 +190,13 @@ li.slick-active button {background-color: #ff0039;}
 }
 
 .banner1 {
-    background-image: url('./static/Pokemon.png');
+    background-image: url('./static/Pokemon_png');
     background-size: cover;
     outline: none;
 }
 
 .banner2 {
-    background-image: url('./static/Pokemon2.png');
+    background-image: url('./static/Pokemon2_png');
     background-size: cover;
     outline: none;
 }
