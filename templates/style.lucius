@@ -97,7 +97,7 @@ header li a:hover {
     height: 400px;
     /*border-bottom:#ff0039 4px solid;*/
     box-shadow: 0px 0px 5px black;
-    background-image: url(@{StaticR Pokemon2_png});
+    background-image: url(@{StaticR_Pokemon2_png});
     background-size: cover;
     outline: none;
 }
