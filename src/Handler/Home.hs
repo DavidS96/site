@@ -33,7 +33,6 @@ getSigninR ::Handler Html
 getSigninR = do
     defaultLayout $ do
          $(whamletFile "templates/signin.hamlet")
-         toWidget $(luciusFile "templates/style.lucius")
          toWidget $(luciusFile "templates/signin.lucius")
 
 getEventsR ::Handler Html
