@@ -11,17 +11,17 @@ Produto
     deriving Show
     
 Serie
-    nome Text
-    ano  Int
-    pais Text
+    nome  Text
+    ano   Int
+    pais  Text
     deriving Show
-    
-Ator
-    nome Text
-    ano  Day
+
+Ator 
+    nome  Text
+    ano   Day
     deriving Show
-    
+
 Atua
-    serieid Serieid
-    atorid  Atorid
+    serieid SerieId
+    atorid  AtorId
     ano     Int
