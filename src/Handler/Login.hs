@@ -45,7 +45,7 @@ postLoginR = do
             redirect AdminR
         FormSuccess (email,senha) -> do 
            -- select * from usuario where email=digitado.email
-           usuario <- runDB $ getBy (UniqueEmailIx email)
+           usuario <- runDB $ getBy (UniqueEmailAdm email)
            case usuario of 
                 Nothing -> do 
                     setMessage [shamlet|
