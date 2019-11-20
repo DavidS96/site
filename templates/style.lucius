@@ -13,7 +13,8 @@ body {
 /* Global */
 .container {
     width: 1152px;
-    margin: 0;
+    margin: auto;
+    padding: 0;
     /*overflow: hidden;*/
 }
 
