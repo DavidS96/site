@@ -7,10 +7,6 @@
 /rules RulesR GET
 
 
-/produto ProdutoR GET POST
-/listar  ListProdR GET
-/produto/#ProdutoId/apagar ApagarProdR POST
-
 /ator     AtorR    GET POST
 /serie    SerieR   GET POST
 
@@ -22,4 +18,3 @@
 /logout   LogoutR  POST
 /admin    AdminR   GET
 
-/teste TesteR GET

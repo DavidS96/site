@@ -98,6 +98,8 @@ header li a:hover {
     /*border-bottom:#ff0039 4px solid;*/
     box-shadow: 0px 0px 5px black;
     url('./static/Pokemon2.png');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Boxes */
