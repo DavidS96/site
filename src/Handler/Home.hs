@@ -30,14 +30,14 @@ getRulesR = do
          toWidget $(luciusFile "templates/style.lucius")
 
 getSigninR ::Handler Html
-getRulesR = do
+getSigninR = do
     defaultLayout $ do
          $(whamletFile "templates/signin.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
          toWidget $(luciusFile "templates/signin.lucius")
 
 getEventsR ::Handler Html
-getRulesR = do
+getEventsR = do
     defaultLayout $ do
          $(whamletFile "templates/events.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
