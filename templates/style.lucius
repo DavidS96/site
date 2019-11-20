@@ -13,7 +13,7 @@ body {
 /* Global */
 .container {
     width: 1152px;
-    margin: auto;
+    margin: 0;
     /*overflow: hidden;*/
 }
 
@@ -106,7 +106,6 @@ header li a:hover {
 #boxes {
     margin-top: 20px;
     text-align: center;
-    padding: 0;
 }
 
 #boxes .box {
