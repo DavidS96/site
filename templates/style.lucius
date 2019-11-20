@@ -109,9 +109,10 @@ header li a:hover {
 }
 
 #boxes .box {
-    width: 100px;
+    width: 30%;
     display: inline-block;
     text-align: center;
+    margin-top: 0;
 }
 
 #boxes .box img {
