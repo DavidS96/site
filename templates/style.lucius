@@ -107,7 +107,7 @@ header li a:hover {
     text-align: center;
 }
 
-#boxes p {margin: 0;}
+#boxes h3 {margin: 0;}
 
 #boxes .box {
     width: 30%;
