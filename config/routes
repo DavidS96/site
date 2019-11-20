@@ -14,8 +14,8 @@
 /ator     AtorR    GET POST
 /serie    SerieR   GET POST
 
-/atua     AtuaR    GET POST
-/serie    SerieR   GET POST
+/atua             AtuaR    GET POST
+/elenco/#SerieId  ElencoR  GET
 
 /cadastro UsuarioR GET POST
 /login    LoginR   GET POST
