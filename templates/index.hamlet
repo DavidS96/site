@@ -7,7 +7,7 @@
         <nav>
             <ul>
                 <li class="current">
-                    <a href=@{HomeR}>Home
+                    <a href=@{HomeR}>Homer
                 <li>
                     <a href="events.html">Events
                 <li>
