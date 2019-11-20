@@ -64,4 +64,4 @@ instance RenderMessage App FormMessage where
     renderMessage _ _ = defaultFormMessage
 
 instance HasHttpManager App where
-    getHttpManager = appHttpManage
+    getHttpManager = appHttpManager
