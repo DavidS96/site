@@ -97,9 +97,6 @@ header li a:hover {
     height: 400px;
     /*border-bottom:#ff0039 4px solid;*/
     box-shadow: 0px 0px 5px black;
-    background-image: url(@{StaticR Pokemon2.png});
-    background-size: cover;
-    outline: none;
 }
 
 .slick-prev {
@@ -190,13 +187,13 @@ li.slick-active button {background-color: #ff0039;}
 }
 
 .banner1 {
-    background-image: url('./static/Pokemon.png');
+    background-image: url('./static/Pokemon_png');
     background-size: cover;
     outline: none;
 }
 
 .banner2 {
-    background-image: url('./static/Pokemon2.png');
+    background-image: url('./static/Pokemon2_png');
     background-size: cover;
     outline: none;
 }

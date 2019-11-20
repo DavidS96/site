@@ -19,6 +19,7 @@
     <h1>
         <span class="highlight">Eventos</span> Recentes
     <div id="slider">
+        <img src=@{StaticR Pokemon2_png}>
 
 <section id="boxes">
     <div class="container">
