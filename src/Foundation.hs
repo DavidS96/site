@@ -31,6 +31,7 @@ instance Yesod App where
     isAuthorized UsuarioR _ = return Authorized 
     isAuthorized AtorR _ = return Authorized
     isAuthorized SerieR _ = return Authorized
+    isAuthorized RulesR _ = return Authorized
     isAuthorized AtuaR _ = return Authorized
     isAuthorized (ElencoR _) _ = return Authorized
     isAuthorized (StaticR _) _ = return Authorized

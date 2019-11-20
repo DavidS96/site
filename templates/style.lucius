@@ -12,7 +12,7 @@ body {
 
 /* Global */
 .container {
-    width: 60%;
+    width: 1152px;
     margin: auto;
     /*overflow: hidden;*/
 }
