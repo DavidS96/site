@@ -5,7 +5,7 @@ body {
     background-color: #242424;
     color: white;
 
-    
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -17,7 +17,7 @@ body {
     /*overflow: hidden;*/
 }
 
-.container h1 {text-transform: uppercase;}
+.container h1 {text-transform: uppercase; padding: 0; margin: 0;}
 
 .highlight {color: #ff0039;}
 
