@@ -36,7 +36,7 @@ getLoginR = do
                 <input type="submit" value="Entrar">
         |]
 
-postLoginRR :: Handler Html
+postLoginR :: Handler Html
 postLoginR = do 
     ((result,_),_) <- runFormPost formLogin
     case result of 
