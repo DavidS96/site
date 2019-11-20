@@ -14,8 +14,7 @@ body {
 .container {
     width: 1152px;
     margin: auto;
-    padding: 0;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 
 .container h1 {text-transform: uppercase;}
