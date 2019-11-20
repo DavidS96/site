@@ -106,14 +106,13 @@ header li a:hover {
 #boxes {
     margin-top: 20px;
     text-align: center;
+    padding: 0;
 }
 
 #boxes .box {
     width: 30%;
     display: inline-block;
     text-align: center;
-    padding: 0 auto;
-    margin: 0 auto;
 }
 
 #boxes .box img {
