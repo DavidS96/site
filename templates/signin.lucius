@@ -1,5 +1,5 @@
 body {
-    background-image: url('./static/foto.png');
+    background-image: url('./static/foto.png') !important;
     background-size: cover;
     background-position: center;
 }
