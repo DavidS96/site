@@ -18,8 +18,8 @@ formLogin = renderBootstrap $ (,)
     <$> areq emailField "E-mail: " Nothing
     <*> areq passwordField "Senha: " Nothing
 
-getEntrarR :: Handler Html
-getEntrarR = do 
+getLoginR :: Handler Html
+getLoginR = do 
     (widget,_) <- generateFormPost formLogin
     msg <- getMessage
     defaultLayout $ 
@@ -31,13 +31,13 @@ getEntrarR = do
             <h1>
                 ENTRAR
             
-            <form method=post action=@{EntrarR}>
+            <form method=post action=@{LoginR}>
                 ^{widget}
                 <input type="submit" value="Entrar">
         |]
 
-postEntrarR :: Handler Html
-postEntrarR = do 
+postLoginRR :: Handler Html
+postLoginR = do 
     ((result,_),_) <- runFormPost formLogin
     case result of 
         FormSuccess ("root@root.com","root125") -> do 
@@ -52,7 +52,7 @@ postEntrarR = do
                         <div>
                             E-mail N ENCONTRADO!
                     |]
-                    redirect EntrarR
+                    redirect LoginR
                 Just (Entity _ usu) -> do 
                     if (usuarioSenha usu == senha) then do
                         setSession "_NOME" (usuarioNome usu)
@@ -62,7 +62,7 @@ postEntrarR = do
                             <div>
                                 Senha INCORRETA!
                         |]
-                        redirect EntrarR 
+                        redirect LoginR 
         _ -> redirect HomeR
 
 postSairR :: Handler Html 
