@@ -25,3 +25,18 @@ Atua
     serieid SerieId
     atorid  AtorId
     ano     Int
+    
+Evento
+    nome        Text
+    data        Day
+    descricao   Text
+    deriving Show
+    
+Inscricoes
+    usuarioid   UsuarioId
+    evento      EventoId
+    data        Day
+    
+    
+    
+    
