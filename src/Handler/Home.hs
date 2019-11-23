@@ -11,6 +11,8 @@ import Import
 import Database.Persist.Postgresql
 import Text.Lucius
 import Text.Julius
+import Handler.Login (formLogin)
+import Handler.Usuario (formUsu)
 
 getHomeR ::Handler Html
 getHomeR = do
