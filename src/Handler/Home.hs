@@ -31,6 +31,8 @@ getRulesR = do
 
 getSigninR ::Handler Html
 getSigninR = do
+    (widgetL,_) <- generateFormPost formLogin
+    (widgetC,enctype) <- generateFormPost formUsu
     defaultLayout $ do
          $(whamletFile "templates/signin.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
