@@ -3,3 +3,8 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.darkbox {
+    display: inline-block;
+    text-align: center;
+}
