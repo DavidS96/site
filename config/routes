@@ -5,7 +5,7 @@
 
 / HomeR GET
 /rules RulesR GET
-/signin SigninR GET 
+/signin SigninR POST 
 /events EventsR GET POST
 
 
