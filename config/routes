@@ -16,8 +16,8 @@
 /atua             AtuaR    GET POST
 /elenco/#SerieId  ElencoR  GET
 
-/cadastro UsuarioR GET POST
-/login    LoginR   GET POST
+/cadastro UsuarioR POST
+/login    LoginR   POST
 /logout   LogoutR  POST
 /admin    AdminR   GET
 
