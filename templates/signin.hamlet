@@ -17,18 +17,14 @@
 
 <div class="container">
         <div class="darkbox">
-            <form class="txtbox login" action="index.html" method="post">
-                <input type="text" name="" placeholder="Nome de usuário">
-                <input type="text" name="" placeholder="Email">
-                <input type="password" name="" placeholder="Senha">
-                <input type="password" name="" placeholder="Confirmar Senha">
-                <input type="submit" name="" value="Cadastrar-se">
-
+            <form method=post action=@{UsuarioR}>
+                ^{widgetC}
+                <input type="submit" value="Cadastrar">
+                
         <div class="darkbox">
-                    <form class="txtbox login" action="index.html" method="post">
-                        <input type="text" name="" placeholder="Nome de usuário">
-                        <input type="password" name="" placeholder="Senha">
-                        <input type="submit" name="" value="Login">
+            <form method=post action=@{LoginR}>
+                ^{widgetL}
+                <input type="submit" value="Entrar">
 <footer>
     <div class="container">
         <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um 
