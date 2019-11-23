@@ -32,7 +32,7 @@ getLoginR = do
                 ENTRAR
             
             <form method=post action=@{LoginR}>
-                ^{widgetL}
+                ^{widget}
                 <input type="submit" value="Entrar">
         |]
 
