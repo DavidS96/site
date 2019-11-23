@@ -19,7 +19,7 @@
         <div class="darkbox">
             <form method=post action=@{UsuarioR}>
                 ^{widgetC}
-                <input type="submit" value="Cadastrar">
+                <input type="submit" value="Cadastrarr">
                 
         <div class="darkbox">
             <form method=post action=@{LoginR}>
