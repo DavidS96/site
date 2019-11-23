@@ -28,7 +28,7 @@
                     <form class="txtbox login" action="index.html" method="post">
                         <input type="text" name="" placeholder="Nome de usuário">
                         <input type="password" name="" placeholder="Senha">
-                        <input type="submit" name="" value="Login">
+                        <input type="submit" name="" value="Logar">
 <footer>
     <div class="container">
         <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um 
