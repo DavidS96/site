@@ -41,7 +41,7 @@ getAtuaR = do
                     ^{mensa}
             
             <h1>
-                CADASTRO DE ATUACOES
+                CADASTRO DE ATUACOE
             
             <form method=post action=@{AtuaR}>
                 ^{widget}
