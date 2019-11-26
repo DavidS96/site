@@ -9,6 +9,6 @@ body {
     text-align: center;
 }
 
-form {
-    
+input {
+    color: black;
 }
