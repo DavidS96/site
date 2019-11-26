@@ -1,5 +1,6 @@
 .darkbox {
     width: 100%;
+    padding: 20px;
 }
 
 .darkbox a {
@@ -8,4 +9,5 @@
 
 .darkbox li {
     display: list-item;
+    padding: 5px;
 }
