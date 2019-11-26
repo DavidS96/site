@@ -10,7 +10,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href=@{HomeR}>Home
+                    <a href=@{HomeR}>Homer
                 <li class="current">
                     <a href=@{EventsR}>Events
                 <li>
