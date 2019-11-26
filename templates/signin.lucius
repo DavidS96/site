@@ -7,4 +7,5 @@ body {
 .darkbox {
     display: inline-block;
     text-align: center;
+    color: black;
 }

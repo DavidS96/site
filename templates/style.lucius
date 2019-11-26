@@ -99,6 +99,7 @@ header li a:hover {
     background-image: url('./static/Pokemon.png');
     background-size: cover;
     background-position: center;
+    margin: 0;
 }
 
 /* Boxes */
