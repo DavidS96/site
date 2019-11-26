@@ -2,6 +2,10 @@
     width: 100%;
 }
 
-li {
+.darkbox a {
     font-size: 15px;
+}
+
+.darkbox li {
+    display: list-item;
 }
