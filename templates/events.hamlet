@@ -15,12 +15,12 @@
                 <li>
                     <a href=@{SigninR}>Sign in
 
-    <div class="darkbox">
-        <ul>
-            <li>
-                <a href=#>Torneio de Natal
-            <li>
-                <a href=#>Torneio de Ano Novo
+        <div class="darkbox">
+            <ul>
+                <li>
+                    <a href=#>Torneio de Natal
+                <li>
+                    <a href=#>Torneio de Ano Novo
 
 <footer>
     <div class="container">

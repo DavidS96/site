@@ -1,3 +1,7 @@
 .darkbox {
     width: 100%;
 }
+
+li {
+    font-size: 15px;
+}
