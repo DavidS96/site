@@ -1,4 +1,7 @@
+<script data-ad-client="ca-pub-3515508416918264" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+
 <header>
     <div class="container">
         <a href=@{HomeR}>
@@ -15,13 +18,16 @@
                 <li>
                     <a href=@{SigninR}>Sign in
 
-        <div class="darkbox">
-            <ul>
-                <li>
-                    <a href=@{EventR}>Torneio de Natal
-                <li>
-                    <a href=#>Torneio de Ano Novo
-
+<div class="container">
+    <h1>
+        <span class="highlight">Torneio</span> de Natal
+    <div id="fotoevento">
+    
+    <div class="darkbox">
+        <p>Dia 29/12 teremos nosso Torneio de Natal! Dessa vez as regras são bem simples: serão apenas permitidos Pokemon iniciais.
+            </br>Nota-1: Eevee e Pikachu contam como iniciais, porém eevolutions e Raichus não.
+            </br>Nota-2: Blaziken é o único Pokemon inicial não permitido para o torneio.
+    
 <footer>
     <div class="container">
         <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um 

@@ -47,6 +47,13 @@ getEventsR = do
          toWidget $(luciusFile "templates/style.lucius")
          toWidget $(luciusFile "templates/events.lucius")
 
+getEventR ::Handler Html
+getEventR = do
+    defaultLayout $ do
+         $(whamletFile "templates/event.hamlet")
+         toWidget $(luciusFile "templates/style.lucius")
+         toWidget $(luciusFile "templates/events.lucius")
+
 getTesteR ::Handler Html
 getTesteR = do
     defaultLayout $ do
