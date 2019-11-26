@@ -7,7 +7,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href=@{HomeR}>Homer
+                    <a href=@{HomeR}>Home
                 <li>
                     <a href=@{EventsR}>Events
                 <li>
@@ -19,7 +19,7 @@
         <div class="darkbox">
             <form method=post action=@{UsuarioR}>
                 ^{widgetC}
-                <input type="submit" value="Cadastrarr">
+                <input type="submit" value="Cadastrar">
                 
         <div class="darkbox">
             <form method=post action=@{LoginR}>

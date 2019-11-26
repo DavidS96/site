@@ -15,7 +15,6 @@
                 <li>
                     <a href=@{SigninR}>Sign in
 
-        <nav>
             <ul>
                 <li>
                     <a href=#>Torneio de Natal
