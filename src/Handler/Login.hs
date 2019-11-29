@@ -50,7 +50,7 @@ postLoginR = do
                 Nothing -> do 
                     setMessage [shamlet|
                         <div>
-                            E-mail N ENCONTRADO!
+                            E-mail NAO ENCONTRADO!
                     |]
                     redirect LoginR
                 Just (Entity _ usu) -> do 
@@ -74,5 +74,6 @@ getAdminR :: Handler Html
 getAdminR = do 
     defaultLayout [whamlet|
         <h1>
-            BEM-VINDO MEU REI!
+            BEM-VINDO!
     |]
+    redirect HomeR
