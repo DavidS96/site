@@ -76,4 +76,4 @@ getAdminR = do
         <h1>
             BEM-VINDO!
     |]
-    redirect HomeR
+    
