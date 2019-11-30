@@ -18,6 +18,6 @@
 
 /cadastro UsuarioR POST
 /login    LoginR   POST
-/logout   LogoutR  GET POST 
+/logout   LogoutR  POST 
 /admin    AdminR   GET
 
