@@ -63,13 +63,13 @@ getIncritoR eventoid = do
           \ INNER JOIN usuario ON inscricoes.usuarioid = usuario.id \
           \ WHERE evento.id = ?"
     evento <- runDB $ get404 eventoid
-    inscritos <- runDB $ rawSql sql [toPersistValue eventoid] :: Handler [(Entity Evento,Entity Inscricoes,Entity Usuario)]
+    inscrito <- runDB $ rawSql sql [toPersistValue eventoid] :: Handler [(Entity Evento,Entity Inscricoes,Entity Usuario)]
     defaultLayout $ do 
         [whamlet|
             <h1>
                 ELENCO DE #{eventoNome evento}
             <ul>
-                $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
+                $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscrito
                     <li>
                         #{usuarioNome usuario}
         |]
