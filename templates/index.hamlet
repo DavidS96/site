@@ -21,6 +21,8 @@
                 <li>
                     <form method=post action=@{LogoutR}>
                        <input type="submit" value="Sair">
+                <div>
+                 Ola #{nomeSess}
                       
 
 <div class="container">
