@@ -2,14 +2,13 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 
+sess <- lookupSession "_NOME"
 <header>
 
     <div class="container">
         <a href=@{HomeR}>
             <div id="logo">
-
         <nav>
-        sess <- lookupSession "_NOME"
             <ul>
                 <li class="current">
                     <a href=@{HomeR}>Home
@@ -19,12 +18,15 @@
                     <a href=@{RulesR}>Rules
                 <li>
                     <a href=@{SigninR}>Sign in
-                    $maybe nomeSess <- sess
-                <li>
-                    <form method=post action=@{LogoutR}>
-                       <input type="submit" value="Sair">
-                <div>
-                 Ola #{nomeSess}
+                $maybe nomeSess <- sess
+                    <li>
+                       <form method=post action=@{LogoutR}>
+                          <input type="submit" value="Sair">
+                    <div>
+                        Ola #{nomeSess}
+                $nothing
+                    <div>
+                        Ola
                       
 
 <div class="container">
