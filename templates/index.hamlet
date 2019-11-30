@@ -17,6 +17,8 @@
                     <a href=@{RulesR}>Rules
                 <li>
                     <a href=@{SigninR}>Sign in
+                <li>
+                    Ola #{nomeSess}
                     $maybe nomeSess <- sess
                 <li>
                     <form method=post action=@{LogoutR}>
