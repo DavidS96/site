@@ -4,6 +4,7 @@
 
 
 <header>
+sess <- lookupSession "_NOME"
     <div class="container">
         <a href=@{HomeR}>
             <div id="logo">
