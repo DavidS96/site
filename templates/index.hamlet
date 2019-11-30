@@ -17,6 +17,7 @@
                     <a href=@{RulesR}>Rules
                 <li>
                     <a href=@{SigninR}>Sign in
+                    $maybe nomeSess <- sess
                 <li>
                     <form method=post action=@{LogoutR}>
                       <input type="submit" value="Sair">
