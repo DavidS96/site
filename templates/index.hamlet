@@ -18,7 +18,8 @@
                 <li>
                     <a href=@{SigninR}>Sign in
                 <li>
-                    <a href=@{LogoutR}>Log out
+                    <form method=post action=@{LogoutR}>
+                      <input type="sumbit" value="Sair">
 
 <div class="container">
     <h1>
