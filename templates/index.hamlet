@@ -18,8 +18,8 @@
                 <li>
                     <a href=@{SigninR}>Sign in
                 <li>
-                    Ola #{nomeSess}
                     $maybe nomeSess <- sess
+                    Ola #{nomeSess}
                 <li>
                     <form method=post action=@{LogoutR}>
                       <input type="submit" value="Sair">
