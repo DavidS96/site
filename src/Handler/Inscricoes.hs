@@ -17,7 +17,7 @@ eventoCB = do
    optionsPairs $ 
       map (\r -> (eventoNome $ entityVal r, entityKey r)) rows
 
- renderDivs
+ --renderDivs
 formInscricoes :: UsuarioId -> Form Incricoes
 formInscricoes userId = renderBootstrap $ (Inscricoes userId)
       <$> areq (selectField eventoCB) "evento : " Nothing
