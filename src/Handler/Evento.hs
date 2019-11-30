@@ -21,7 +21,7 @@ formEvento = renderBootstrap $ Evento
 
 getEventoR :: Handler Html
 getEventoR = do 
-    (widget,_) <- generateFormPost formEvento
+    (widget,_)<- generateFormPost formEvento
     msg <- getMessage
     defaultLayout $ 
         [whamlet|
@@ -39,7 +39,7 @@ getEventoR = do
 
 postEventoR :: Handler Html
 postEventoR = do 
-    ((result,_),_) <- runFormPost formEvento
+    ((result,_) <- runFormPost formEvento
     case result of 
         FormSuccess Evento -> do 
             runDB $ insert Evento 
