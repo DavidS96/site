@@ -39,7 +39,7 @@ getEventoR = do
 
 postEventoR :: Handler Html
 postEventoR = do 
-    ((result,_) <- runFormPost formEvento
+    ((result,_),_) <- runFormPost formEvento
     case result of 
         FormSuccess Evento -> do 
             runDB $ insert Evento 
