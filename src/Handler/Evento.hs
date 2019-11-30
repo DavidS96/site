@@ -41,8 +41,8 @@ postEventoR :: Handler Html
 postEventoR = do 
     ((result,_),_) <- runFormPost formEvento
     case result of 
-        FormSuccess Evento -> do 
-            runDB $ insert Evento 
+        FormSuccess evento -> do 
+            runDB $ insert evento 
             setMessage [shamlet|
                 <div>
                     Evento INCLUIDO
