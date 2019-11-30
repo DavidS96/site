@@ -16,8 +16,6 @@ sess <- lookupSession "_NOME"
                     <a href=@{EventsR}>Events
                 <li>
                     <a href=@{RulesR}>Rules
-                <li>
-                    <a href=@{SigninR}>Sign in
                 $maybe nomeSess <- sess
                     <li>
                        <form method=post action=@{LogoutR}>
@@ -25,8 +23,8 @@ sess <- lookupSession "_NOME"
                     <div>
                         Ola #{nomeSess}
                 $nothing
-                    <div>
-                        Ola
+                    <li>
+                    <a href=@{SigninR}>Sign in       
                       
 
 <div class="container">
