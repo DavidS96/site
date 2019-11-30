@@ -17,6 +17,8 @@
                     <a href=@{RulesR}>Rules
                 <li>
                     <a href=@{SigninR}>Sign in
+                <li>
+                    <a href=@{LogoutR}>Log out
 
 <div class="container">
     <h1>

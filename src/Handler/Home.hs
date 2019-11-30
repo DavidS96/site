@@ -54,40 +54,7 @@ getEventR = do
          toWidget $(luciusFile "templates/style.lucius")
          toWidget $(luciusFile "templates/events.lucius")
 
-getTesteR ::Handler Html
-getTesteR = do
-    defaultLayout $ do
-         $(whamletFile "templates/teste.hamlet")
 
 
 
 
-
--- getPage2R ::Handler Html
--- getPage2R = do
---     defaultLayout $ do
---         $(whamletFile "templates/page2.hamlet")
-
--- getHomeR :: Handler Html
--- getHomeR = do 
---     defaultLayout $ do 
---         addStylesheet (StaticR css_bootstrap_css)
---         toWidgetHead [julius|
---             function ola(){
---                 alert("ola");
---             }
---         |]
---         toWidgetHead [lucius|
---             h1 {
---                 color : red;
---             }
---         |]
---         [whamlet|
---             <h1>
---                 OLA MUNDO!
-            
---             <img src=@{StaticR sample_png}>
-            
---             <button class="btn btn-danger" onclick="olaa">
---                 OLA
---         |]

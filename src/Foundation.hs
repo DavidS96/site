@@ -49,7 +49,7 @@ isAdmin = do
     case sess of 
         Nothing -> return AuthenticationRequired
         Just "admin" -> return Authorized
-        Just _ -> return $ Unauthorized "VC EH USUARIO COMUM"
+        Just _ -> return $ Unauthorized "Nessessário Autorização"
 
 isUsuario :: Handler AuthResult
 isUsuario = do 
