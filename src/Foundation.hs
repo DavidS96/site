@@ -7,7 +7,7 @@
 
 module Foundation where
 
--- import Import.NoFoundation
+import Import.NoFoundation
 import Database.Persist.Sql (ConnectionPool, runSqlPool)
 import Yesod.Core.Types     (Logger)
 
