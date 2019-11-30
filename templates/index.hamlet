@@ -17,12 +17,11 @@
                     <a href=@{RulesR}>Rules
                 <li>
                     <a href=@{SigninR}>Sign in
-                <li>
                     $maybe nomeSess <- sess
-                    Ola #{nomeSess}
                 <li>
                     <form method=post action=@{LogoutR}>
                       <input type="submit" value="Sair">
+                      
 
 <div class="container">
     <h1>
