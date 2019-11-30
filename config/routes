@@ -4,24 +4,24 @@
 /robots.txt RobotsR GET
 
 / HomeR GET
-/rules RulesR GET
-/signin SigninR GET 
-/events EventsR GET
-/event  EventR  GET 
-/evento EventoR GET POST
-
-
-/ator     AtorR    GET POST
-/serie    SerieR   GET POST
-
-/inscricoes InscricoesR GET POST
-/Inscritos/#EventoId    GET
-
-/atua             AtuaR    GET POST
-/elenco/#SerieId  ElencoR  GET
-
-/cadastro UsuarioR POST
-/login    LoginR   POST
-/logout   LogoutR  POST 
-/admin    AdminR   GET
+-- /rules RulesR GET
+-- /signin SigninR GET 
+-- /events EventsR GET
+-- /event  EventR  GET 
+-- /evento EventoR GET POST
+-- 
+-- 
+-- /ator     AtorR    GET POST
+-- /serie    SerieR   GET POST
+-- 
+-- /inscricoes InscricoesR GET POST
+-- /Inscritos/#EventoId    GET
+-- 
+-- /atua             AtuaR    GET POST
+-- /elenco/#SerieId  ElencoR  GET
+-- 
+-- /cadastro UsuarioR POST
+-- /login    LoginR   POST
+-- /logout   LogoutR  POST 
+-- /admin    AdminR   GET
 
