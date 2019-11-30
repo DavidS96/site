@@ -12,36 +12,36 @@ import Text.Julius
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
-eventoCB = do
-  rows <- runDB $ selectList [] [Asc EventoNome]
-  optionsPairs $ 
-      map (\r -> (eventoNome $ entityVal r, entityKey r)) rows
+-- eventoCB = do
+--   rows <- runDB $ selectList [] [Asc EventoNome]
+--   optionsPairs $ 
+--       map (\r -> (eventoNome $ entityVal r, entityKey r)) rows
 
--- renderDivs
-formInscricoes :: UsuarioId -> Form Incricoes
-formInscricoes userId = renderBootstrap $ (Inscricoes userId)
-    <$> areq (selectField eventoCB) "evento : " Nothing
+-- -- renderDivs
+-- formInscricoes :: UsuarioId -> Form Incricoes
+-- formInscricoes userId = renderBootstrap $ (Inscricoes userId)
+--     <$> areq (selectField eventoCB) "evento : " Nothing
 
     
-getInscricoesR :: Handler Html
-getInscricoesR = do
-    nome <- lookupSession "_NOME"
-    (Entity key _) <- runDB $ selectFirst [UsuarioNome =. nome] []
-    (widget,_) <- generateFormPost (formInscricoes key)
-    msg <- getMessage
-    defaultLayout $ 
-        [whamlet|
-            $maybe mensa <- msg 
-                <div>
-                    ^{mensa}
+-- getInscricoesR :: Handler Html
+-- getInscricoesR = do
+--     nome <- lookupSession "_NOME"
+--     (Entity key _) <- runDB $ selectFirst [UsuarioNome =. nome] []
+--     (widget,_) <- generateFormPost (formInscricoes key)
+--     msg <- getMessage
+--     defaultLayout $ 
+--         [whamlet|
+--             $maybe mensa <- msg 
+--                 <div>
+--                     ^{mensa}
             
-            <h1>
-                Inscricao
+--             <h1>
+--                 Inscricao
             
-            <form method=post action=@{InscricoesR}>
-                ^{widget}
-                <input type="submit" value="Cadastrar">
-        |]
+--             <form method=post action=@{InscricoesR}>
+--                 ^{widget}
+--                 <input type="submit" value="Cadastrar">
+--         |]
 
 postInscricoesR :: Handler Html
 postInscricoesR = do 
