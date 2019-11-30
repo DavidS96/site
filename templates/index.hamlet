@@ -3,12 +3,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 
 <header>
-sess <- lookupSession "_NOME"
+
     <div class="container">
         <a href=@{HomeR}>
             <div id="logo">
 
         <nav>
+        sess <- lookupSession "_NOME"
             <ul>
                 <li class="current">
                     <a href=@{HomeR}>Home
