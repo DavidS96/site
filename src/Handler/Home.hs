@@ -16,6 +16,7 @@ import Handler.Usuario (formUsu)
 
 getHomeR ::Handler Html
 getHomeR = do
+    sess <- lookupSession "_NOME"
     defaultLayout $ do
         $(whamletFile "templates/index.hamlet")
         --toWidget $(jsFile "templates/slick.min.js")
