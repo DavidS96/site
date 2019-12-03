@@ -44,9 +44,8 @@ getInscricoesR = do
 postInscricoesR :: Handler Html
 postInscricoesR = do 
     nome <- lookupSession "_NOME"
-    x <- runDB $ selectFirst [UsuarioNome =. nome] []
-    let key = case x of
-                 Just (Entity key _) -> key
+    Just (Entity key _) <- runDB $ selectFirst [UsuarioNome =. nome] []
+
     
     ((result,_),_) <- runFormPost $ formInscricoes key
     case result of 
