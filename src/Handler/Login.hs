@@ -72,6 +72,6 @@ postLogoutR = do
 
 getAdminR :: Handler Html
 getAdminR = do 
-    defaultLayout $ do 
-    toWidget $(luciusFile "templates/style.lucius")
-    
+    defaultLayout $ do
+         $(whamletFile "templates/index.hamlet")
+         toWidget $(luciusFile "templates/style.lucius")
