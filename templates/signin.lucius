@@ -6,6 +6,7 @@ body {
 
 #alin {
     text-align: center;
+    margin: 0 auto;
 }
 
 #alin .darkbox {
