@@ -9,9 +9,10 @@ body {
     height: 300px;
     width: 300px;
     display: inline-block;
-    margin: 10px;
+    margin: 0 auto;
 }
 
 #alin {
     text-align: center;
+    padding: 10px;
 }
