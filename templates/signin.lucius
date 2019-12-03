@@ -7,11 +7,11 @@ body {
 .darkbox {
     text-align: center;
     height: 300px;
+    float: left;
     margin: 10px;
-    display-inline: block;
 }
 
 #alin {
-    text-align: center;
+
     margin: auto;
 }
