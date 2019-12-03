@@ -73,6 +73,11 @@ postLogoutR = do
 getAdminR :: Handler Html
 getAdminR = do 
     defaultLayout [whamlet|
+      <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css">  
         <header>
     <div class="container">
         <a href=@{HomeR}>
