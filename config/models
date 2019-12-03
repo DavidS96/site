@@ -32,8 +32,6 @@ Evento
     descricao   Text
     deriving Show
     
-Inscricoes
-    usuarioid   UsuarioId
-    eventoid    EventoId
-    data        Day
+
+    
     
