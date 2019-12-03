@@ -7,8 +7,6 @@ body {
 .darkbox {
     text-align: center;
     height: 300px;
-    float: left;
-    float: right;
     margin: 10px;
 }
 
