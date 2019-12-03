@@ -9,7 +9,7 @@ body {
     margin: 20px;
 }
 
-.darkbox {
+#align .darkbox {
     text-align: center;
     height: 300px;
     width: 300px;
