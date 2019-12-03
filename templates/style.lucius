@@ -138,7 +138,6 @@ footer {
 .txtbox {
     position: relative;
     display: inline;
-    margin: 0;
 }
 
 .txtbox input[type = "text"],.txtbox input[type = "password"],.txtbox input[type = "email"] {
