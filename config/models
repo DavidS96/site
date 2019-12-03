@@ -35,6 +35,6 @@ Evento
 Inscricoes
     usuarioId   UsuarioId
     eventoId    EventoId
-    data        Day
+   
     
     
