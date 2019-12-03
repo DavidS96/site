@@ -14,5 +14,6 @@ body {
     height: 300px;
     width: 300px;
     display: inline-block;
+    float: left;
     margin: 10px;
 }
