@@ -8,9 +8,10 @@ body {
     display: inline-block;
     text-align: center;
     height: 300px;
+    margin: auto;
 }
 
 #alin {
     text-align: center;
-    margin: 0;
+    margin: auto;
 }
