@@ -15,7 +15,7 @@
                 <li class="current">
                     <a href=@{SigninR}>Sign in
 
-<section id="alin">
+<section id="align">
     <div class="container">
         <div class="darkbox">
             <form class="txtbox" method=post action=@{UsuarioR}>

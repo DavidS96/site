@@ -6,13 +6,13 @@ body {
 
 #alin {
     text-align: center;
-    margin: 0 auto;
+    margin: 20px;
 }
 
 #alin .darkbox {
     text-align: center;
     height: 300px;
     width: 300px;
-    float: left;
+    display: inline-block;
     margin: 10px;
 }
