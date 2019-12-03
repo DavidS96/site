@@ -4,15 +4,14 @@ body {
     background-position: center;
 }
 
-.darkbox {
+#alin {
+    text-align: center;
+}
+
+#alin .darkbox {
     text-align: center;
     height: 300px;
     width: 300px;
     float: left;
     margin: 10px;
-}
-
-#alin {
-    text-align: center;
-    margin: 0 auto;
 }
