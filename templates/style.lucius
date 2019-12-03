@@ -177,6 +177,6 @@ footer {
     width: 400px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 40px;
+    padding-top: 40px;
 
 }
