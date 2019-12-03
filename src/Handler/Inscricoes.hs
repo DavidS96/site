@@ -25,9 +25,11 @@ formInscricoes userId = renderBootstrap $ (Inscricoes userId)
     
 getInscricoesR :: Handler Html
 getInscricoesR = do
-     (widget,_) <- generateFormPost (formInscricoes key)
-     msg <- getMessage
-     defaultLayout $ 
+    nome <- lookupSession "_NOME"
+    Just (Entity key _) <- runDB $ selectFirst [UsuarioNome =. nome] []
+    (widget,_) <- generateFormPost (formInscricoes key)
+    msg <- getMessage
+    defaultLayout $ 
          [whamlet|
              $maybe mensa <- msg 
                  <div>
