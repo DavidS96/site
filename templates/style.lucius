@@ -164,6 +164,7 @@ footer {
     transition: 0.25s;
     cursor: pointer;
     margin-top: 20px;
+    min-width: 50px;
 }
 
 .txtbox input[type = "submit"]:hover {background: #ff0039;}
