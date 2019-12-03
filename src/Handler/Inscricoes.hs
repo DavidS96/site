@@ -26,7 +26,7 @@ formInscricoes userId = renderBootstrap $ (Inscricoes userId)
 getInscricoesR :: Handler Html
 getInscricoesR = do
     nome <- lookupSession "_NOME"
-    Just (Entity key _) <- runDB $ selectFirst [UsuarioNome =. nome] []
+    Just (Entity key _) <- runDB $ selectFirst [UsuarioNome =. (Just nome)] []
     (widget,_) <- generateFormPost (formInscricoes key)
     msg <- getMessage
     defaultLayout $ 
@@ -46,7 +46,7 @@ getInscricoesR = do
 postInscricoesR :: Handler Html
 postInscricoesR = do 
     nome <- lookupSession "_NOME"
-    Just (Entity key _) <- runDB $ selectFirst [UsuarioNome =. nome] []
+    Just (Entity key _) <- runDB $ selectFirst [UsuarioNome =. (Just nome)] []
 
     
     ((result,_),_) <- runFormPost $ formInscricoes key
