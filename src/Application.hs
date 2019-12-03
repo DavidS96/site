@@ -45,7 +45,7 @@ import Handler.Ator
 import Handler.Serie
 import Handler.Atua
 import Handler.Evento
-import Handler.Inscricoes
+--import Handler.Inscricoes
 
 
 -- This line actually creates our YesodDispatch instance. It is the second half
