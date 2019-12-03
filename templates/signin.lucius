@@ -9,6 +9,6 @@ body {
     text-align: center;
 }
 
-input {
-    color: black;
+.container {
+    text-align: center;
 }
