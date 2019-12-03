@@ -8,7 +8,7 @@ body {
     display: inline-block;
     text-align: center;
     height: 300px;
-    margin: auto;
+    float: left;
 }
 
 #alin {
