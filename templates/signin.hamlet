@@ -17,12 +17,12 @@
 
 <div class="container">
         <div class="darkbox">
-            <form method=post action=@{UsuarioR}>
+            <form class="txtbox" method=post action=@{UsuarioR}>
                 ^{widgetC}
                 <input type="submit" value="Cadastrar">
                 
         <div class="darkbox">
-            <form method=post action=@{LoginR}>
+            <form class="txtbox" method=post action=@{LoginR}>
                 ^{widgetL}
                 <input type="submit" value="Entrar">
 <footer>
