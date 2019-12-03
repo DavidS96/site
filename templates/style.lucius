@@ -138,6 +138,15 @@ footer {
 .txtbox {
     position: relative;
     display: inline;
+    
+    border:0;
+    background: none;
+    text-align: center;
+    border: 2px solid #242424;
+    padding: 10px;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.25s;
 }
 
 .txtbox input[type = "text"],.txtbox input[type = "password"] {
