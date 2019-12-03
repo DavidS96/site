@@ -5,6 +5,7 @@ body {
 }
 
 .darkbox {
+    display: inline-block;
     text-align: center;
     height: 200px;
     width: 400px;
@@ -12,4 +13,5 @@ body {
 
 .container {
     text-align: center;
+    margin: 0;
 }
