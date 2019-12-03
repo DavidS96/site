@@ -14,5 +14,5 @@ body {
 
 #alin {
     text-align: center;
-    margin: auto;
+    
 }
