@@ -74,6 +74,6 @@ getAdminR :: Handler Html
 getAdminR = do 
     defaultLayout [whamlet|
         <h1>
-            BEM-VINDO!
+            BEM-VINDO!!
     |]
     
