@@ -46,6 +46,10 @@ ul {
   
   ::-webkit-scrollbar-thumb:hover {background: #ff0039;}
 
+.txtbox input[type = "submit"]:hover {background: #ff0039;}
+
+.txtbox input:hover {border-color: #ff0039;}
+
 /* Header */
 header {
     background-color: #121212;

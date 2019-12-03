@@ -18,17 +18,19 @@
                 $maybe nomeSess <- sess
                     <li>
                        <form method=post action=@{LogoutR}>
-                          <input type="submit" value="Sair">
-                    <div>
-                        Ola #{nomeSess}
+                          <input type="submit" value="Sign Out">
                 $nothing
                     <li>
-                    <a href=@{SigninR}>Sign in       
+                        <a href=@{SigninR}>Sign in
                       
 
 <div class="container">
-    <h1>
-        <span class="highlight">Eventos</span> Recentes
+    $maybe nomeSess <- sess
+        <h1>
+            Bem vindo <span class="highlight"> #{nomeSess}</span>
+    $nothing
+        <h1>
+            <span class="highlight">Eventos</span> Recentes
     <div id="slider">
 
 <section id="boxes">
