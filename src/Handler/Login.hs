@@ -72,6 +72,7 @@ postLogoutR = do
 
 getAdminR :: Handler Html
 getAdminR = do 
+    sess <- lookupSession "_NOME"
     defaultLayout $ do
          $(whamletFile "templates/index.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
