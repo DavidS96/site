@@ -33,5 +33,8 @@ Evento
     deriving Show
     
 
-    
+Inscricoes
+    usuarioid   UsuarioId
+    eventoid    EventoId
+        
     

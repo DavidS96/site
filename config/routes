@@ -13,8 +13,8 @@
 /ator     AtorR    GET POST
 /serie    SerieR   GET POST
 
--- /inscricoes InscricoesR GET POST
--- /Inscritos/#EventoId IncritoR  GET
+/inscricoes InscricoesR GET POST
+/Inscritos/#EventoId IncritoR  GET
 
 
 /atua  AtuaR    GET POST
