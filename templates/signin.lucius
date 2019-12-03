@@ -13,5 +13,4 @@ body {
 
 .container {
     text-align: center;
-    display: inline-block;
 }
