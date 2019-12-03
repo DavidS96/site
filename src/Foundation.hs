@@ -38,7 +38,7 @@ instance Yesod App where
     isAuthorized EventR _ = return Authorized
     isAuthorized AtuaR _ = return Authorized
     isAuthorized InscricoesR _ = return Authorized
-    isAuthorized (IncritoR _) _ = return Authorized
+    isAuthorized (InscritoR _) _ = return Authorized
     isAuthorized (ElencoR _) _ = return Authorized
     isAuthorized (StaticR _) _ = return Authorized
     isAuthorized AdminR _ = isAdmin

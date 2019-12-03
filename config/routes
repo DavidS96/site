@@ -14,7 +14,7 @@
 /serie    SerieR   GET POST
 
 /inscricoes InscricoesR GET POST
-/Inscritos/#EventoId IncritoR  GET
+/Inscritos/#EventoId InscritoR  GET
 
 
 /atua  AtuaR    GET POST

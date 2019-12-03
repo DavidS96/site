@@ -60,8 +60,8 @@ postInscricoesR = do
             redirect InscricoesR
         _ -> redirect HomeR
 
-getIncritoR :: EventoId -> Handler Html
-getIncritoR eventoid = do 
+getInscritoR :: EventoId -> Handler Html
+getInscritoR eventoid = do 
     let sql = "SELECT ??,??,?? FROM evento \
           \ INNER JOIN inscricoes ON inscricoes.eventoid = evento.id \
           \ INNER JOIN usuario ON inscricoes.usuarioid = usuario.id \
