@@ -16,12 +16,12 @@
                     <a href=@{SigninR}>Sign in
 
 <div class="container">
-    <div id="alin">
+    <section id="boxes">
         <div class="darkbox">
             <form class="txtbox" method=post action=@{UsuarioR}>
                 ^{widgetC}
                 <input type="submit" value="Cadastrar">
-                        
+                
         <div class="darkbox">
             <form class="txtbox" method=post action=@{LoginR}>
                 ^{widgetL}
