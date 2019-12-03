@@ -9,10 +9,10 @@ body {
     margin: 20px;
 }
 
-#alin .darkbox {
+.darkbox {
     text-align: center;
     height: 300px;
     width: 300px;
-    float: left;
     margin: 10px;
+    display: inline-block;
 }
