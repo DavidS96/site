@@ -46,10 +46,6 @@ postEventoR = do
             setMessage [shamlet|
                 <div>
                     Evento INCLUIDO
-                    
-                    <form method=post action=@{EventoR}>
-                    ^{widgetH}
-                    <input type="submit" value="Cadastrar">
             |]
             redirect EventoR
         _ -> redirect HomeR
