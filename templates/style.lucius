@@ -189,7 +189,7 @@ select {
     padding: 10px;
 }
 
-select:focus{
+select option:focus{
     background-color: #ff0039;
 }
 
