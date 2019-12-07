@@ -9,16 +9,24 @@
             <div id="logo">
         <nav>
             <ul>
+            
+            
                 <li class="current">
                     <a href=@{HomeR}>Home
+                    
+                    
                 $maybe nomeSess <- sess
-                <li>
-                    <a href=@{EventsR}>Events
+                    <li>
+                        <a href=@{EventsR}>Events
                 $nothing
                     <li>
                         <a href=@{SigninR}>Events
+                        
+                        
                 <li>
                     <a href=@{RulesR}>Rules
+                    
+                    
                 $maybe nomeSess <- sess
                     <li>
                        <form class="txtbox" method=post action=@{LogoutR}>
