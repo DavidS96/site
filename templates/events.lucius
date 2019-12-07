@@ -1,5 +1,8 @@
 .darkbox {
     width: 100%;
+}
+
+.darkbox p {
     padding: 20px;
 }
 

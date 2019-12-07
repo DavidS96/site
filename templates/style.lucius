@@ -179,3 +179,35 @@ footer {
     background-color: rgba(0, 0, 0, 0.9);
     padding: 40px;
 }
+
+
+/* Signin-Signout */
+.signout {
+    position: relative;
+    display: inline;
+}
+
+.signout input[type = "text"],.signout input[type = "password"],.signout input[type = "email"] {
+    border:0;
+    background: none;
+    text-align: center;
+    border: 2px solid #242424;
+    padding: 10px;
+    outline: none;
+    border-radius: 25px;
+    transition: 0.25s;
+}
+
+.signout input[type = "submit"] {
+    border:0;
+    background: none;
+    border: 2px solid #ff0039;
+    padding: 10px;
+    outline: none;
+    color: white;
+    border-radius: 25px;
+    transition: 0.25s;
+    cursor: pointer;
+    margin-top: 20px;
+    min-width: 190px;
+}
