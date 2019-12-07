@@ -66,13 +66,58 @@ getInscritoR eventoid = do
     evento <- runDB $ get404 eventoid
     inscritos <- runDB $ rawSql sql [toPersistValue eventoid] :: Handler [(Entity Evento,Entity Inscricoes,Entity Usuario)]
     defaultLayout $ do 
+         
          [whamlet|
-            <h1>
-                Lista De Inscritos Do #{eventoNome evento}
-            <ul>
-                $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
-                    <li>
-                        #{usuarioNome usuario}
+            <header>
+                <div class="container">
+                    <a href=@{HomeR}>
+                        <div id="logo">
+            
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href=@{HomeR}>Home
+            
+                            $maybe nomeSess <- sess
+                                <li class="current">
+                                    <a href=@{EventsR}>Events
+                            $nothing
+                                <li class="current">
+                                    <a href=@{SigninR}>Events
+                    
+                            <li>
+                                <a href=@{RulesR}>Rules
+                   
+                            $maybe nomeSess <- sess
+                                <li>
+                                   <form class="txtbox" method=post action=@{LogoutR}>
+                                      <input type="submit" value="Sign Out">
+                            $nothing
+                                <li>
+                                    <a href=@{SigninR}>Sign in
+            
+            <div class="container">
+                <h1>Torneio de Natal
+                <div id="fotoevento">
+                
+                <div class="darkbox">
+                    <p>Dia 29/12 teremos nosso Torneio de Natal! Dessa vez as regras são bem simples: serão apenas permitidos Pokemon iniciais.
+                    <p>Nota-1: Eevee e Pikachu contam como iniciais, porém eevolutions e Raichus não.
+                    <p>Nota-2: Blaziken é o único Pokemon inicial não permitido para o torneio.
+            
+                <h1>
+                    Lista De Inscritos Do #{eventoNome evento}
+                <ul>
+                    $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
+                        <li>
+                            #{usuarioNome usuario}
+                            
+            <footer>
+                <div class="container">
+                    <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um 
+                        modo novo de se jogar fora das convenções já estabelecidas por formatos como Smogon e VGC, oferecendo um
+                        formato
+                        menos competitivo e mais <i>for fun.
         |]
       
        
