@@ -32,11 +32,6 @@ ul {
     margin: 0;
 }
 
-#mensagem {
-    position: absolute;
-    z-index: 9;
-}
-
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -150,7 +145,6 @@ footer {
     background: none;
     text-align: center;
     border: 2px solid #242424;
-    padding: 10px;
     outline: none;
     border-radius: 25px;
     transition: 0.25s;
