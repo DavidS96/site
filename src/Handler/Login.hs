@@ -10,7 +10,6 @@ module Handler.Login where
 import Import
 import Text.Lucius
 import Text.Julius
-import Handler.EventR (formEvento)
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
