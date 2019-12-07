@@ -17,7 +17,7 @@
     
     <div class="darkbox">
         <h1>Criar Evento
-        <form method=post action=@{EventoR}>
+        <form class="txtbox" method=post action=@{EventoR}>
                     ^{widgetH}
                     <input type="submit" value="Cadastrar">
 
