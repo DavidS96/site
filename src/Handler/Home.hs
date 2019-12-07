@@ -46,6 +46,7 @@ getSigninR = do
 getEventsR ::Handler Html
 getEventsR = do
     sess <- lookupSession "_NOME"
+    (widgetI,_) <- generateFormPost (formInscricoes key)
     defaultLayout $ do
          $(whamletFile "templates/events.hamlet")
          toWidget $(luciusFile "templates/style.lucius")

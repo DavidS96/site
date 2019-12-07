@@ -3,7 +3,7 @@
     padding: 0;
 }
 
-.darkbox {
+.darkbox p {
     padding: 10px;
 }
 

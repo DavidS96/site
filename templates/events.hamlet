@@ -20,6 +20,11 @@
                     <li>
                         <a href=@{SigninR}>Sign in
 
+        <form method=post action=@{InscricoesR}>
+                 ^{widgetI}
+                <input type="submit" value="Cadastrar">
+         |]
+
         <div class="darkbox">
             <ul>
                 <li>
