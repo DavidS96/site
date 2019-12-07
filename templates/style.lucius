@@ -183,7 +183,7 @@ select {
     color: white;
     background-color: #121212;
     cursor: pointer;
-    font: 18px/2 bahnschrift;
+    font: 16px/2 bahnschrift;
     text-transform: capitalize;
     border-width: 0px;
     padding: 10px;
