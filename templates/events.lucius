@@ -12,7 +12,7 @@
 }
 
 .darkbox li {
-    
+    display: list-item;
     padding: 5px;
 }
 
