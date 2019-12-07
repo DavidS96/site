@@ -13,7 +13,7 @@
                       <input type="submit" value="Sign Out">
                 
 <div class="container">
-    <h1>Bem vindo <span class="highlight"> #{nomeSess}</span>
+    <h1>Bem vindo <span class="highlight">Admin</span>
     
     <div class="darkbox">
         <h1>Criar Evento
