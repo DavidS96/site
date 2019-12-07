@@ -63,15 +63,9 @@ getEventR = do
          toWidget $(luciusFile "templates/style.lucius")
          toWidget $(luciusFile "templates/events.lucius")
 
-getEvent2R :: EventoId -> Handler Html
-getEvent2R eventoid = do 
+getEvent2R :: Handler Html
+getEvent2R = do 
     sess <- lookupSession "_NOME"
-    let sql = "SELECT ??,??,?? FROM evento \
-          \ INNER JOIN inscricoes ON inscricoes.eventoid = evento.id \
-          \ INNER JOIN usuario ON inscricoes.usuarioid = usuario.id \
-          \ WHERE evento.id = ?"
-    evento <- runDB $ get404 eventoid
-    inscritos <- runDB $ rawSql sql [toPersistValue eventoid] :: Handler [(Entity Evento,Entity Inscricoes,Entity Usuario)]
     defaultLayout $ do
          $(whamletFile "templates/event2.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
