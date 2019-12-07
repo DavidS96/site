@@ -135,11 +135,6 @@ footer {
 }
 
 /* Text Box */
-
-.txtbox bottom[type = "botton"] {
-    background-color: #121212;
-}
-
 .txtbox {
     position: relative;
     display: inline;
