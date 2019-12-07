@@ -8,10 +8,17 @@
             <ul>
                 <li>
                     <a href=@{HomeR}>Home
-                <li>
-                    <a href=@{EventsR}>Events
+
+                $maybe nomeSess <- sess
+                    <li>
+                        <a href=@{EventsR}>Events
+                $nothing
+                    <li>
+                        <a href=@{SigninR}>Events
+        
                 <li class="current">
                     <a href=@{RulesR}>Rules
+       
                 $maybe nomeSess <- sess
                     <li>
                        <form class="txtbox" method=post action=@{LogoutR}>

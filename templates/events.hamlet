@@ -12,7 +12,7 @@
                     <li class="current">
                         <a href=@{EventsR}>Events
                 $nothing
-                    <li>
+                    <li class="current">
                         <a href=@{SigninR}>Events
                 <li>
                     <a href=@{RulesR}>Rules
