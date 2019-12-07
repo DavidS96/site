@@ -186,14 +186,7 @@ select {
     font: 20px/2 bahnschrift;
     text-transform: capitalize;
     border-width: 0px;
-}
-
-option {
-    padding: 80px;
-}
-
-option:hover {
-    background-color: #ff0039;
+    padding: 20px;
 }
 
 
