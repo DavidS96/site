@@ -69,7 +69,7 @@ getEvent2R eventoid = do
     let sql = "SELECT ??,??,?? FROM evento \
           \ INNER JOIN inscricoes ON inscricoes.eventoid = evento.id \
           \ INNER JOIN usuario ON inscricoes.usuarioid = usuario.id \
-          \ WHERE evento.id = 2"
+          \ WHERE evento.id = ?"
     evento <- runDB $ get404 eventoid
     inscritos <- runDB $ rawSql sql [toPersistValue eventoid] :: Handler [(Entity Evento,Entity Inscricoes,Entity Usuario)]
     defaultLayout $ do
