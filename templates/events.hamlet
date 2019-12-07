@@ -20,16 +20,13 @@
                     <li>
                         <a href=@{SigninR}>Sign in
 
-        <form method=post action=@{InscricoesR}>
+        <form class="txtbox" method=post action=@{InscricoesR}>
                  ^{widgetI}
                 <input type="submit" value="Cadastrar">
 
         <div class="darkbox">
-            <ul>
-                <li>
-                    Torneio de Natal --> <a href=@{EventR}>leia sobre aqui.</a>
-                <li>
-                    Torneio de Ano Novo --> <a href=#>leia sobre aqui.</a>
+            <p>Torneio de Natal --> <a href=@{EventR}>leia sobre aqui.</a>
+            <p>Torneio de Ano Novo --> <a href=#>leia sobre aqui.</a>
 
 <footer>
     <div class="container">
