@@ -33,9 +33,7 @@ ul {
 }
 
 #mensagem {
-    float: left;
-    padding: 0;
-    margin: 0;
+    position: absolute;
     z-index: 9;
 }
 
@@ -156,7 +154,7 @@ footer {
     outline: none;
     border-radius: 25px;
     transition: 0.25s;
-    min-width: 190px;
+    width: 200px;
 }
 
 .txtbox input[type = "text"]:focus,.txtbox input[type = "password"]:focus,.txtbox input[type = "email"]:focus,.txtbox input[type = "date"]:focus {border-color: #ff0039;}
@@ -172,12 +170,13 @@ footer {
     transition: 0.25s;
     cursor: pointer;
     margin-top: 20px;
-    min-width: 190px;
+    width: 200px;
 }
 
 .txtbox input[type = "submit"]:hover {background: #ff0039;}
 
 .txtbox input:hover {border-color: #ff0039;}
+
 
 /* Login */
 .darkbox {
