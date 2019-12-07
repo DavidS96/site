@@ -50,6 +50,7 @@ ul {
 header {
     background-color: #121212;
     height: 80px;
+    margin: 0 auto;
 }
 
 header #logo {
@@ -144,11 +145,12 @@ footer {
     border:0;
     background: none;
     text-align: center;
+    padding: 10px;
     border: 2px solid #242424;
     outline: none;
     border-radius: 25px;
     transition: 0.25s;
-    width: 200px;
+    width: 180px;
 }
 
 .txtbox input[type = "text"]:focus,.txtbox input[type = "password"]:focus,.txtbox input[type = "email"]:focus,.txtbox input[type = "date"]:focus {border-color: #ff0039;}
