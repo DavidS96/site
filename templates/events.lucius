@@ -1,5 +1,10 @@
 .darkbox {
     width: 100%;
+    padding: 0;
+}
+
+.darkbox {
+    padding: 10px;
 }
 
 .darkbox a {
