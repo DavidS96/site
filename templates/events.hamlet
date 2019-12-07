@@ -27,8 +27,8 @@
         
         <h1> eventos rolando
         <div class="darkbox">
-            <p>Torneio de Natal --> <a href=@{EventR}>leia sobre aqui.</a>
-            <p>Torneio de Ano Novo --> <a href=#>leia sobre aqui.</a>
+            <p>Torneio de Natal - <a href=@{EventR}>leia sobre aqui.</a>
+            <p>Torneio de Ano Novo - <a href=#>leia sobre aqui.</a>
 
 <footer>
     <div class="container">

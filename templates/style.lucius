@@ -183,11 +183,14 @@ select {
     color: white;
     background-color: #121212;
     cursor: pointer;
-    font: 15px/2 bahnschrift;
-    border-radius: 0px;
+    font: 20px/2 bahnschrift;
+    text-transform: capitalize;
+    border-width: 0px;
 }
 
-
+option {
+    padding: 5px;
+}
 
 
 
