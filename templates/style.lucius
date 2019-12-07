@@ -138,7 +138,6 @@ footer {
 .txtbox {
     position: relative;
     display: inline;
-    min-width: 190px;
 }
 
 .txtbox input[type = "text"],.txtbox input[type = "password"],.txtbox input[type = "email"],.txtbox input[type = "date"] {
@@ -150,6 +149,7 @@ footer {
     outline: none;
     border-radius: 25px;
     transition: 0.25s;
+    min-width: 190px;
 }
 
 .txtbox input[type = "text"]:focus,.txtbox input[type = "password"]:focus,.txtbox input[type = "email"]:focus,.txtbox input[type = "date"]:focus {border-color: #ff0039;}
@@ -165,6 +165,7 @@ footer {
     transition: 0.25s;
     cursor: pointer;
     margin-top: 20px;
+    min-width: 190px;
 }
 
 .txtbox input[type = "submit"]:hover {background: #ff0039;}
