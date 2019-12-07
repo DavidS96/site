@@ -20,11 +20,12 @@
                     <li>
                         <a href=@{SigninR}>Sign in
 
-        <h1> eventos roalndo :)
+        <h1> inscreva-se já
         <form class="txtbox" method=post action=@{InscricoesR}>
                  ^{widgetI}
                 <input type="submit" value="Cadastrar">
-
+        
+        <h1> eventos roalndo
         <div class="darkbox">
             <p>Torneio de Natal --> <a href=@{EventR}>leia sobre aqui.</a>
             <p>Torneio de Ano Novo --> <a href=#>leia sobre aqui.</a>
