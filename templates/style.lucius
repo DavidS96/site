@@ -32,6 +32,13 @@ ul {
     margin: 0;
 }
 
+#mensagem {
+    float: right;
+    padding: 0;
+    margin: 0;
+    z-index: 9;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
