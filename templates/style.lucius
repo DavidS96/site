@@ -183,17 +183,13 @@ select {
     color: white;
     background-color: #121212;
     cursor: pointer;
-    font: 20px/2 bahnschrift;
+    font: 15px/2 bahnschrift;
     text-transform: capitalize;
     border-width: 0px;
     padding: 10px;
 }
 
-select option{
-    padding: 10px;
-}
-
-select option:hover{
+select option:focus{
     background-color: #ff0039;
 }
 
