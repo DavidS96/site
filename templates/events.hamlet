@@ -1,5 +1,4 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-<div class="darkline">Inscrito Incluido
 <header>
     <div class="container">
         <a href=@{HomeR}>
@@ -9,8 +8,12 @@
             <ul>
                 <li>
                     <a href=@{HomeR}>Home
+                $maybe nomeSess <- sess
                 <li class="current">
                     <a href=@{EventsR}>Events
+                $nothing
+                    <li>
+                        <a href=@{SigninR}>Events
                 <li>
                     <a href=@{RulesR}>Rules
                 $maybe nomeSess <- sess

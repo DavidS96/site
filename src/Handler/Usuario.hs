@@ -29,7 +29,7 @@ getUsuarioR = do
                     ^{mensa}
             
             <h1>
-                CADASTRO DE Usuario
+                CADASTRO DE USUARIO
                 
             <form method=post action=@{UsuarioR}>
                 ^{widget}

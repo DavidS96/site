@@ -54,7 +54,7 @@ postInscricoesR = do
         FormSuccess inscricoes -> do 
             runDB $ insert $ inscricoes
             setMessage [shamlet|
-                    <div class="darkbox">Inscrito Incluido
+                    <div class="darkline">Inscrito Incluido
             |]
             redirect EventsR
         _ -> redirect HomeR
