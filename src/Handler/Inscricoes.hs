@@ -59,7 +59,7 @@ postInscricoesR = do
 
 getInscritoR :: EventoId -> Handler Html
 getInscritoR eventoid = do 
-    Just nome <- lookupSession "_NOME"
+    sess <- lookupSession "_NOME"
     let sql = "SELECT ??,??,?? FROM evento \
           \ INNER JOIN inscricoes ON inscricoes.eventoid = evento.id \
           \ INNER JOIN usuario ON inscricoes.usuarioid = usuario.id \
@@ -67,7 +67,6 @@ getInscritoR eventoid = do
     evento <- runDB $ get404 eventoid
     inscritos <- runDB $ rawSql sql [toPersistValue eventoid] :: Handler [(Entity Evento,Entity Inscricoes,Entity Usuario)]
     defaultLayout $ do 
-         
          [whamlet|
             <header>
                 <div class="container">
