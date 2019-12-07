@@ -21,10 +21,9 @@
                         <a href=@{SigninR}>Sign in
 
         <h1> inscreva-se já
-        <div class="darkbox">
-            <form class="txtbox" method=post action=@{InscricoesR}>
-                     ^{widgetI}
-                    <input type="submit" value="Cadastrar">
+        <form class="txtbox" method=post action=@{InscricoesR}>
+                 ^{widgetI}
+                <input type="submit" value="Cadastrar">
         
         <h1> eventos rolando
         <div class="darkbox">

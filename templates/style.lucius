@@ -179,6 +179,18 @@ footer {
     padding: 40px;
 }
 
+select {
+    color: white;
+    background-color: #121212;
+    cursor: pointer;
+    font: 15px/2 bahnschrift;
+    border-radius: 0px;
+}
+
+
+
+
+
 .signout {
     position: relative;
     display: inline;
