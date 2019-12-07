@@ -8,7 +8,7 @@
         <nav>
             <ul>
                 <li>
-                    <a href=@{HomeR}>Home
+                    <a href=@{HomeR}>Homer
                 $maybe nomeSess <- sess
                     <li class="current">
                         <a href=@{EventsR}>Events
