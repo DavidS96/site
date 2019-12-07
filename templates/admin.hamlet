@@ -18,7 +18,7 @@
     <div class="darkbox">
         <h1>Criar Evento
         <form method=post action=@{EventoR}>
-                    ^{widget}
+                    ^{widgetH}
                     <input type="submit" value="Cadastrar">
 
 <footer>

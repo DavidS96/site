@@ -74,7 +74,7 @@ postLogoutR = do
 getAdminR :: Handler Html
 getAdminR = do 
     sess <- lookupSession "_NOME"
-    (widget,_)<- generateFormPost formEvento
+    (widgetH,_)<- generateFormPost formEvento
     msg <- getMessage
     defaultLayout $ do
          $(whamletFile "templates/admin.hamlet")
