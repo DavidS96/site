@@ -53,10 +53,8 @@ postInscricoesR = do
     case result of 
         FormSuccess inscricoes -> do 
             runDB $ insert $ inscricoes
-            setMessage [whamlet|
-                    <div class="darkline">Inscrito Incluido
-            |]
-            redirect EventsR
+            
+            redirect EventR
         _ -> redirect HomeR
 
 getInscritoR :: EventoId -> Handler Html
