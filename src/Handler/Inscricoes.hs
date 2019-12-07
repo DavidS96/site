@@ -20,7 +20,7 @@ eventoCB = do
  --renderDivs
 formInscricoes :: UsuarioId -> Form Inscricoes
 formInscricoes userId = renderBootstrap $ (Inscricoes userId)
-      <$> areq (selectField eventoCB) "Evento : " Nothing
+      <$> areq (selectField eventoCB)  Nothing
 
     
 getInscricoesR :: Handler Html
