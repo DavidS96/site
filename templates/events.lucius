@@ -2,10 +2,6 @@
     width: 100%;
 }
 
-.darkbox p {
-    padding: 20px;
-}
-
 .darkbox a {
     font-size: 20px;
 }
