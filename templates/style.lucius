@@ -189,9 +189,12 @@ select {
 }
 
 option {
-    padding: 15px;
+    padding: 80px;
 }
 
+option:hover {
+    background-color: #ff0039;
+}
 
 
 .signout {
