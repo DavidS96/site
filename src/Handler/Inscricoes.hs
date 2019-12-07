@@ -70,7 +70,7 @@ getInscritoR eventoid = do
             <h1>
                 Lista De Inscritos Do #{eventoNome evento}
             <ul>
-                $forall (Entity  , Entity  , Entity _ usuario) <- inscritos
+                $forall (Entity _, Entity _, Entity _ usuario) <- inscritos
                     <li>
                         #{usuarioNome usuario}
         |]
