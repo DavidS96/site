@@ -181,6 +181,13 @@ footer {
     padding: 40px;
 }
 
+.darkline {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-left: 10px;
+}
+
 select {
     color: white;
     background-color: #121212;
