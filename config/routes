@@ -7,7 +7,8 @@
 /rules RulesR GET
 /signin SigninR GET 
 /events EventsR GET
-/event  EventR  GET 
+/event1 EventR  GET
+/event2 Event2R  GET
 /evento EventoR GET POST
 
 /ator     AtorR    GET POST

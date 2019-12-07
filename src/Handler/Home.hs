@@ -63,7 +63,13 @@ getEventR = do
          toWidget $(luciusFile "templates/style.lucius")
          toWidget $(luciusFile "templates/events.lucius")
 
-
+getEvent2R ::Handler Html
+getEvent2R = do
+    sess <- lookupSession "_NOME"
+    defaultLayout $ do
+         $(whamletFile "templates/event2.hamlet")
+         toWidget $(luciusFile "templates/style.lucius")
+         toWidget $(luciusFile "templates/events.lucius")
 
 
 
