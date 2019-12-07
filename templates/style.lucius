@@ -186,9 +186,16 @@ select {
     font: 20px/2 bahnschrift;
     text-transform: capitalize;
     border-width: 0px;
-    padding: 20px;
+    padding: 10px;
 }
 
+select option{
+    padding: 10px;
+}
+
+select option:hover{
+    background-color: #ff0039;
+}
 
 .signout {
     position: relative;
