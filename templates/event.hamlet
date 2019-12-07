@@ -24,8 +24,7 @@
                         <a href=@{SigninR}>Sign in
 
 <div class="container">
-    <h1>
-        <span class="highlight">Torneio</span> de Natal
+    <h1>Torneio de Natal
     <div id="fotoevento">
     
     <div class="darkbox">
