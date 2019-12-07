@@ -1,5 +1,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-<div class="darkbox"> Inscrito Incluido
+<div class="darkbox">
+    <pre>Inscrito Incluido
 <header>
     <div class="container">
         <a href=@{HomeR}>
