@@ -71,7 +71,7 @@ getInscritoR eventoid = do
     defaultLayout $ do 
         [whamlet|
             <h1>
-                ELENCO DE #{eventoNome evento}
+                Lista De Inscritos Do #{eventoNome evento}
             <ul>
                 $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
                     <li>
