@@ -181,8 +181,14 @@ footer {
     padding: 40px;
 }
 
-.darkbox p {
-    margin-left: 10px;
+.darkline {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.darkline p{
+    padding-left: 10px;
 }
 
 select {
