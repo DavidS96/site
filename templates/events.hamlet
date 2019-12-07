@@ -27,9 +27,9 @@
         <div class="darkbox">
             <ul>
                 <li>
-                    Torneio de Natal --> <a href=@{EventR}>leia sobre aqui.
+                    Torneio de Natal --> <a href=@{EventR}>leia sobre aqui.</a>
                 <li>
-                    Torneio de Ano Novo --> <a href=#>leia sobre aqui.
+                    Torneio de Ano Novo --> <a href=#>leia sobre aqui.</a>
 
 <footer>
     <div class="container">
