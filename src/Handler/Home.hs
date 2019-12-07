@@ -28,12 +28,14 @@ getHomeR = do
 
 getRulesR ::Handler Html
 getRulesR = do
+    sess <- lookupSession "_NOME"
     defaultLayout $ do
          $(whamletFile "templates/rules.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
 
 getSigninR ::Handler Html
 getSigninR = do
+    sess <- lookupSession "_NOME"
     (widgetL,_) <- generateFormPost formLogin
     (widgetC,enctype) <- generateFormPost formUsu
     defaultLayout $ do
@@ -43,6 +45,7 @@ getSigninR = do
 
 getEventsR ::Handler Html
 getEventsR = do
+    sess <- lookupSession "_NOME"
     defaultLayout $ do
          $(whamletFile "templates/events.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
@@ -50,6 +53,7 @@ getEventsR = do
 
 getEventR ::Handler Html
 getEventR = do
+    sess <- lookupSession "_NOME"
     defaultLayout $ do
          $(whamletFile "templates/event.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
