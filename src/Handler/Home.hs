@@ -13,6 +13,7 @@ import Text.Lucius
 import Text.Julius
 import Handler.Login (formLogin)
 import Handler.Usuario (formUsu)
+import Handler.Inscricoes (formInscricoes)
 
 getHomeR ::Handler Html
 getHomeR = do
