@@ -9,8 +9,8 @@
                 <li>
                     <a href=@{HomeR}>Home
                 $maybe nomeSess <- sess
-                <li class="current">
-                    <a href=@{EventsR}>Events
+                    <li class="current">
+                        <a href=@{EventsR}>Events
                 $nothing
                     <li>
                         <a href=@{SigninR}>Events
