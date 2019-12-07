@@ -189,7 +189,7 @@ select {
     padding: 10px;
 }
 
-select:hover{
+select:focus{
     background-color: #ff0039;
 }
 
