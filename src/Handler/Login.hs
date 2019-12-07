@@ -6,9 +6,11 @@
 {-# LANGUAGE TypeFamilies #-}
 module Handler.Login where
 
+
 import Import
 import Text.Lucius
 import Text.Julius
+import Handler.EventR (formEvento)
 --import Network.HTTP.Types.Status
 import Database.Persist.Postgresql
 
@@ -73,6 +75,10 @@ postLogoutR = do
 getAdminR :: Handler Html
 getAdminR = do 
     sess <- lookupSession "_NOME"
+    (widget,_)<- generateFormPost formEvento
+    msg <- getMessage
     defaultLayout $ do
-         $(whamletFile "templates/index.hamlet")
+         $(whamletFile "templates/admin.hamlet")
          toWidget $(luciusFile "templates/style.lucius")
+            
+    

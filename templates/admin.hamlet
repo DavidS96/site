@@ -1,0 +1,29 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+<header>
+    <div class="container">
+        <a href=@{AdminR}>
+            <div id="logo">
+
+        <nav>
+            <ul>
+                <li class="current">
+                    <a href=@{AdminR}>Home
+                <li>
+                   <form class="txtbox" method=post action=@{LogoutR}>
+                      <input type="submit" value="Sign Out">
+                
+<div class="container">
+    <h1>Bem vindo <span class="highlight"> #{nomeSess}</span>
+    
+    <div class="darkbox">
+        <h1>Criar Evento
+        <form method=post action=@{EventoR}>
+                    ^{widget}
+                    <input type="submit" value="Cadastrar">
+
+<footer>
+    <div class="container">
+        <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um
+            modo novo de se jogar fora das convenções já estabelecidas por formatos como Smogon e VGC, oferecendo um
+            formato
+            menos competitivo e mais <i>for fun.
