@@ -54,7 +54,7 @@ postInscricoesR = do
         FormSuccess inscricoes -> do 
             runDB $ insert $ inscricoes
             setMessage [shamlet|
-                <div>
+                <header>
                     Inscrito Incluido
             |]
             redirect EventsR
