@@ -23,14 +23,13 @@
         <form method=post action=@{InscricoesR}>
                  ^{widgetI}
                 <input type="submit" value="Cadastrar">
-         |]
 
         <div class="darkbox">
             <ul>
                 <li>
-                    <a href=@{EventR}>Torneio de Natal
+                    Torneio de Natal --> <a href=@{EventR}>leia sobre aqui.
                 <li>
-                    <a href=#>Torneio de Ano Novo
+                    Torneio de Ano Novo --> <a href=#>leia sobre aqui.
 
 <footer>
     <div class="container">
