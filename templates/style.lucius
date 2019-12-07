@@ -182,28 +182,9 @@ footer {
 }
 
 .darkbox p {
-    padding: 10px;
+    padding-left: 10px;
 }
 
-.darkbox form {
-    padding: 10px;
-}
-
-.darkbox a {
-    font-size: 20px;
-    text-transform: none;
-}
-
-.darkbox a:hover {
-    color: #ff0039;
-    font-size: 20px;
-    text-transform: none;
-}
-
-.darkbox li {
-    display: list-item;
-    padding: 5px;
-}
 
 select {
     color: white;
