@@ -67,7 +67,7 @@ getInscritoR eventoid = do
     evento <- runDB $ get404 eventoid
     inscritos <- runDB $ rawSql sql [toPersistValue eventoid] :: Handler [(Entity Evento,Entity Inscricoes,Entity Usuario)]
     defaultLayout $ do 
-         [whamlet|
+        [whamlet|
             <header>
                 <div class="container">
                     <a href=@{HomeR}>
@@ -97,7 +97,7 @@ getInscritoR eventoid = do
                                     <a href=@{SigninR}>Sign in
             
             <div class="container">
-                <h1>Torneio de Natal
+                <h1>Torneio de Ano Novo
                 <div id="fotoevento">
                 
                 <div class="darkbox">
@@ -106,7 +106,7 @@ getInscritoR eventoid = do
                     <p>Nota-2: Blaziken é o único Pokemon inicial não permitido para o torneio.
             
                 <h1>
-                    Lista De Inscritos Do #{eventoNome evento}
+                    Lista de Inscritos
                 <ul>
                     $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
                         <li>
@@ -119,6 +119,7 @@ getInscritoR eventoid = do
                         formato
                         menos competitivo e mais <i>for fun.
         |]
-      
+        toWidget $(luciusFile "templates/style.lucius")
+        toWidget $(luciusFile "templates/events.lucius")
        
       
