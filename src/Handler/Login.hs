@@ -74,7 +74,6 @@ postLogoutR = do
 
 getAdminR :: Handler Html
 getAdminR = do 
-    sess <- lookupSession "_NOME"
     (widgetH,_)<- generateFormPost formEvento
     msg <- getMessage
     defaultLayout $ do
