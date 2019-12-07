@@ -140,7 +140,7 @@ footer {
     display: inline;
 }
 
-.txtbox input[type = "text"],.txtbox input[type = "password"],.txtbox input[type = "email"] {
+.txtbox input[type = "text"],.txtbox input[type = "password"],.txtbox input[type = "email"],.txtbox input[type = "date"] {
     border:0;
     background: none;
     text-align: center;
@@ -151,7 +151,7 @@ footer {
     transition: 0.25s;
 }
 
-.txtbox input[type = "text"]:focus,.txtbox input[type = "password"]:focus,.txtbox input[type = "email"]:focus {border-color: #ff0039;}
+.txtbox input[type = "text"]:focus,.txtbox input[type = "password"]:focus,.txtbox input[type = "email"]:focus,.txtbox input[type = "date"]:focus {border-color: #ff0039;}
 
 .txtbox input[type = "submit"] {
     border:0;
