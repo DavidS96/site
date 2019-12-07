@@ -11,6 +11,10 @@
             <ul>
                 <li class="current">
                     <a href=@{HomeR}>Home
+                $maybe "admin" <- sess
+                <li>
+                    <a href=@{EventoR}>Cadastras Evento
+                $nothing   
                 <li>
                     <a href=@{EventsR}>Events
                 <li>
