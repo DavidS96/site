@@ -39,11 +39,7 @@
         <p>Nota-1: Eevee e Pikachu contam como iniciais, porém eevolutions e Raichus não.
         <p>Nota-2: Blaziken é o único Pokemon inicial não permitido para o torneio.
 
-    <h1>Lista De Inscritos Do #{eventoNome evento}
-        <ul>
-            $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
-                <li>
-                    #{usuarioNome usuario}
+    
     
 <footer>
     <div class="container">

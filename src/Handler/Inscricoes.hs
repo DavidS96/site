@@ -66,9 +66,14 @@ getInscritoR eventoid = do
     evento <- runDB $ get404 eventoid
     inscritos <- runDB $ rawSql sql [toPersistValue eventoid] :: Handler [(Entity Evento,Entity Inscricoes,Entity Usuario)]
     defaultLayout $ do 
-         $(whamletFile "templates/event.hamlet")
-             toWidget $(luciusFile "templates/style.lucius")
-             toWidget $(luciusFile "templates/events.lucius")
-
+         [whamlet|
+            <h1>
+                Lista De Inscritos Do #{eventoNome evento}
+            <ul>
+                $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
+                    <li>
+                        #{usuarioNome usuario}
+        |]
+      
        
       
