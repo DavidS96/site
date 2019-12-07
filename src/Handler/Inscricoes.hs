@@ -59,7 +59,6 @@ postInscricoesR = do
 
 getInscritoR :: EventoId -> Handler Html
 getInscritoR eventoid = do 
-    sess <- lookupSession "_NOME"
     let sql = "SELECT ??,??,?? FROM evento \
           \ INNER JOIN inscricoes ON inscricoes.eventoid = evento.id \
           \ INNER JOIN usuario ON inscricoes.usuarioid = usuario.id \
