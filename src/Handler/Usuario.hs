@@ -46,5 +46,5 @@ postUsuarioR = do
                 <h2>
                     USUARIO INSERIDO COM SUCESSO
             |]
-            redirect LoginR
+            redirect SigninR
         _ -> redirect HomeR
