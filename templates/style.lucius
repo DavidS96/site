@@ -138,6 +138,7 @@ footer {
 .txtbox {
     position: relative;
     display: inline;
+    min-width: 190px;
 }
 
 .txtbox input[type = "text"],.txtbox input[type = "password"],.txtbox input[type = "email"],.txtbox input[type = "date"] {
@@ -164,7 +165,6 @@ footer {
     transition: 0.25s;
     cursor: pointer;
     margin-top: 20px;
-    min-width: 190px;
 }
 
 .txtbox input[type = "submit"]:hover {background: #ff0039;}

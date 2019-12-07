@@ -55,9 +55,9 @@ postInscricoesR = do
             runDB $ insert $ inscricoes
             setMessage [shamlet|
                 <div>
-                    Inscrito INCLUIDA
+                    Inscrito Incluido
             |]
-            redirect InscricoesR
+            redirect EventsR
         _ -> redirect HomeR
 
 getInscritoR :: EventoId -> Handler Html
