@@ -46,6 +46,8 @@ getSigninR = do
 getEventsR ::Handler Html
 getEventsR = do
     sess <- lookupSession "_NOME"
+    Just nome <- lookupSession "_NOME"
+    Just (Entity key _) <- runDB $ selectFirst [UsuarioNome ==. nome] []
     (widgetI,_) <- generateFormPost (formInscricoes key)
     defaultLayout $ do
          $(whamletFile "templates/events.hamlet")
