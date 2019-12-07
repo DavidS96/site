@@ -50,7 +50,6 @@ ul {
 header {
     background-color: #121212;
     height: 80px;
-    margin: 0 auto;
 }
 
 header #logo {
