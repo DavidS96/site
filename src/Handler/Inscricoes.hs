@@ -97,7 +97,7 @@ getInscritoR eventoid = do
                                     <a href=@{SigninR}>Sign in
             
             <div class="container">
-                <h1>#{eventoNome evento}
+                <h1>#{eventoNome evento} dia #{eventoData evento}
                 <div id="fotoevento">
                 
                 <div class="darkbox">
@@ -110,7 +110,7 @@ getInscritoR eventoid = do
                     $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
                         <li>
                             #{usuarioNome usuario}
-                            
+            <p>               
             <footer>
                 <div class="container">
                     <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um 
