@@ -56,6 +56,7 @@ postInscricoesR = do
             setMessage [shamlet|
                 <div>
                     USUARIO INSCRITO
+            |]
             redirect EventsR
         _ -> redirect HomeR
 
