@@ -223,8 +223,8 @@ footer {
     font: 25px/2 bahnschrift;
 }
 
-.logout:hover {
+.logout input:hover {
     color: #ff0039;
     border-bottom:#ff0039 2px solid;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 }
