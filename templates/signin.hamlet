@@ -27,16 +27,15 @@
                         <a href=@{SigninR}>Sign in
 
 <section id="align">
-    <div class="container">
-        <div class="darkbox">
-            <form class="txtbox" method=post action=@{UsuarioR}>
-                ^{widgetC}
-                <input type="submit" value="Cadastrar">
-                
-        <div class="darkbox">
-            <form class="txtbox" method=post action=@{LoginR}>
-                ^{widgetL}
-                <input type="submit" value="Entrar">
+    <div class="darkbox">
+        <form class="txtbox" method=post action=@{UsuarioR}>
+            ^{widgetC}
+            <input type="submit" value="Cadastrar">
+            
+    <div class="darkbox">
+        <form class="txtbox" method=post action=@{LoginR}>
+            ^{widgetL}
+            <input type="submit" value="Entrar">
 <footer>
     <div class="container">
         <p>PokeSquad LEAGUE &trade; | Grupo de Pokemon voltado sempre para as ultimas gerações, foca em entregar um 
