@@ -226,5 +226,5 @@ footer {
 .logout input:hover {
     color: #ff0039;
     border-bottom:#ff0039 2px solid;
-    padding-bottom: 3px;
+
 }
