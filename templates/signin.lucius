@@ -6,7 +6,6 @@ body {
 
 #align {
     text-align: center;
-    float: left;
 }
 
 #align .darkbox {
