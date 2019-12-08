@@ -32,8 +32,8 @@
         
         <h1> eventos rolando
         <div class="darkbox">
-            <p>Torneio de Natal - <a href=@{EventR}>leia sobre aqui.</a>
-            <p>Torneio de Ano Novo - <a href=@{Event2R}>leia sobre aqui.</a>
+            <p>Torneio de Natal - <a href="https://pokesquadtab.ml/Inscritos/1" target="_blank">leia sobre aqui.</a>
+            <p>Torneio de Ano Novo - <a href="https://pokesquadtab.ml/Inscritos/2" target="_blank">leia sobre aqui.</a>
 
 <footer>
     <div class="container">

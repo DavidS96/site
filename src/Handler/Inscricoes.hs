@@ -54,7 +54,7 @@ postInscricoesR = do
         FormSuccess inscricoes -> do 
             runDB $ insert $ inscricoes
             
-            redirect EventR
+            redirect EventsR
         _ -> redirect HomeR
 
 getInscritoR :: EventoId -> Handler Html
