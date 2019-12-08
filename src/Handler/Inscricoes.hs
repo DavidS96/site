@@ -98,7 +98,7 @@ getInscritoR eventoid = do
             
             <div class="container">
                 <h1>#{eventoNome evento}
-                <div>#{eventoData evento}
+                #{eventoData evento}
                 <div id="fotoevento">
                 
                 <div class="darkbox">
