@@ -19,8 +19,8 @@
        
                 $maybe nomeSess <- sess
                     <li>
-                       <form class="signout" method=post action=@{LogoutR}>
-                          <input type="submit" value="Sign Out">
+                       <form class="logout" method=post action=@{LogoutR}>
+                          <input type="submit" value="Log Out">
                 $nothing
                     <li>
                         <a href=@{SigninR}>Sign in

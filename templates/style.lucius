@@ -56,6 +56,13 @@ ul {
   
   ::-webkit-scrollbar-thumb:hover {background: #ff0039;}
 
+.darkbox {
+    width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+}
+
 
 
 /*-----Header-----*/
@@ -198,27 +205,27 @@ footer {
 
 
 
-/*-----Login-----*/
+/*-----Log Out-----*/
 
-.darkbox {
-    width: 400px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 40px;
-}
 
-.signout {
+.logout {
     position: relative;
     display: inline;
 }
 
 
-.signout input[type = "submit"] {
+.logout input[type = "submit"] {
     border:0;
     background: none;
     outline: none;
     color: white;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 25px;
+    font: 25px/2 bahnschrift;
+}
+
+.logout:hover {
+    color: #ff0039;
+    border-bottom:#ff0039 2px solid;
+    padding-bottom: 1px;
 }
