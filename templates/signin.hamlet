@@ -27,7 +27,7 @@
                         <a href=@{SigninR}>Sign in
 
 <section id="align">
-    <div class="darkbox">
+    <div class="darkbox2">
         <form class="txtbox" method=post action=@{UsuarioR}>
             ^{widgetC}
             <input type="submit" value="Cadastrar">
