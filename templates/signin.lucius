@@ -6,7 +6,7 @@ body {
 
 #align {
     text-align: center;
-    margin-left: 14%;
+    margin-left: 176px;
 }
 
 #align .darkbox {
