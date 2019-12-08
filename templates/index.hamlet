@@ -1,8 +1,3 @@
-<script data-ad-client="ca-pub-3515508416918264" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-
-
 <header>
     <div class="container">
         <a href=@{HomeR}>
@@ -24,7 +19,7 @@
        
                 $maybe nomeSess <- sess
                     <li>
-                       <form class="txtbox" method=post action=@{LogoutR}>
+                       <form class="signout" method=post action=@{LogoutR}>
                           <input type="submit" value="Sign Out">
                 $nothing
                     <li>
