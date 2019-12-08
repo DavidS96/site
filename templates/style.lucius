@@ -218,7 +218,6 @@ footer {
     border:0;
     background: none;
     outline: none;
-    color: white;
     cursor: pointer;
     text-transform: uppercase;
     font: 25px/2 bahnschrift;
@@ -227,5 +226,5 @@ footer {
 .logout:hover {
     color: #ff0039;
     border-bottom:#ff0039 2px solid;
-    padding-bottom: 1px;
+    padding-bottom: 2px;
 }
