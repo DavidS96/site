@@ -97,7 +97,7 @@ getInscritoR eventoid = do
                                     <a href=@{SigninR}>Sign in
             
             <div class="container">
-                <h1>Torneio de Ano Novo
+                <h1>#{eventoNome evento}
                 <div id="fotoevento">
                 
                 <div class="darkbox">
