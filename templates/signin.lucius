@@ -6,15 +6,10 @@ body {
 
 #align {
     text-align: center;
-    margin: 20px;
-    float: right;
 }
 
 #align .darkbox {
-    text-align: center;
-    height: 300px;
-    width: 300px;
+    width: 400px;
     display: inline-block;
-    float: left;
-    margin: 10px;
+    text-align: center;
 }
