@@ -101,9 +101,8 @@ getInscritoR eventoid = do
                 <div id="fotoevento">
                 
                 <div class="darkbox">
-                    <p>Dia 29/12 teremos nosso Torneio de Natal! Dessa vez as regras são bem simples: serão apenas permitidos Pokemon iniciais.
-                    <p>Nota-1: Eevee e Pikachu contam como iniciais, porém eevolutions e Raichus não.
-                    <p>Nota-2: Blaziken é o único Pokemon inicial não permitido para o torneio.
+                    $forall (Entity _ evento, Entity _ _, Entity _ _) <- inscritos
+                        <p>#{eventoDescricao evento}
             
                 <h1>
                     Lista de Inscritos
