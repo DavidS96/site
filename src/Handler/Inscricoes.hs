@@ -101,12 +101,13 @@ getInscritoR eventoid = do
                 <div id="fotoevento">
                 
                 <div class="darkbox">
-                    $forall (Entity _ evento, Entity _ _, Entity _ _) <- inscritos
+                    
                         <p>#{eventoDescricao evento}
             
                 <h1>
                     Lista de Inscritos
                 <ul>
+                    $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
                         <li>
                             #{usuarioNome usuario}
                             
