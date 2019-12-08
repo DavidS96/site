@@ -13,11 +13,5 @@ body {
     height: 300px;
     width: 300px;
     display: inline-block;
-}
-
-#align .darkbox2 {
-    margin-top: 120px;
-    height: 300px;
-    width: 300px;
-    display: inline-block;
+    float: left;
 }
