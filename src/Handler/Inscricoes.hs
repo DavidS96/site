@@ -53,7 +53,9 @@ postInscricoesR = do
     case result of 
         FormSuccess inscricoes -> do 
             runDB $ insert $ inscricoes
-            
+            setMessage [shamlet|
+                <div>
+                    USUARIO INSCRITO
             redirect EventsR
         _ -> redirect HomeR
 

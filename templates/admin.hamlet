@@ -8,8 +8,8 @@
                 <li class="current">
                     <a href=@{AdminR}>Home
                 <li>
-                   <form class="txtbox" method=post action=@{LogoutR}>
-                      <input type="submit" value="Sign Out">
+                   <form class="logout" method=post action=@{LogoutR}>
+                          <input type="submit" value="Log Out">
                 
 <div class="container">
     <h1>Bem vindo <span class="highlight">Admin</span>
