@@ -110,9 +110,11 @@ getInscritoR eventoid = do
             
                 <h1>
                     Lista de Inscritos
-                <ul>
-                    $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
-                        <li>#{usuarioNome usuario}
+                
+                <div class="lista">
+                    <ul>
+                        $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
+                            <li>#{usuarioNome usuario}
             <p>               
             <footer>
                 <div class="container">
