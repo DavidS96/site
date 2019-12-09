@@ -101,6 +101,7 @@ getInscritoR eventoid = do
             
             <div class="container">
                 <h1>#{eventoNome evento}
+                <p>#{show $ eventoData evento}
                 <div id="fotoevento">
                 
                 <div class="darkbox">
@@ -111,8 +112,7 @@ getInscritoR eventoid = do
                     Lista de Inscritos
                 <ul>
                     $forall (Entity _ _, Entity _ _, Entity _ usuario) <- inscritos
-                        <li>
-                            #{usuarioNome usuario}
+                        <li>#{usuarioNome usuario}
             <p>               
             <footer>
                 <div class="container">
