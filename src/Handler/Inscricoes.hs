@@ -93,8 +93,8 @@ getInscritoR eventoid = do
                    
                             $maybe nomeSess <- sess
                                 <li>
-                                   <form class="txtbox" method=post action=@{LogoutR}>
-                                      <input type="submit" value="Sign Out">
+                                   <form class="logout" method=post action=@{LogoutR}>
+                                      <input type="submit" value="Log Out">
                             $nothing
                                 <li>
                                     <a href=@{SigninR}>Sign in
