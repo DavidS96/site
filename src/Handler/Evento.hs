@@ -45,7 +45,7 @@ postEventoR = do
             runDB $ insert evento 
             setMessage [shamlet|
                 <div>
-                    Evento INCLUIDO
+                    EVENTO INCLUIDO
             |]
             redirect EventoR
         _ -> redirect HomeR
